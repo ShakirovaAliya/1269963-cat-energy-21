@@ -1,95 +1,83 @@
-.extra-products {
-  padding: 0 20px;
-  &__heading {
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400px;
-    color: @basic-black;
-    margin-bottom: 35px;
-    padding-left: 20px;
-    position: relative;
-  }
 
-  &__heading::after {
+.extra-products__heading {
+  .heading;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-bottom: 35px;
+  position: relative;
+  &::after {
     position: absolute;
     content: "";
-    background-color: @green;
-    width: 33px;
+    width: 53px;
     height: 2px;
     right: 0px;
     top: 15px;
+    background-color: @green;
   }
+}
 
-  &__list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 39px;
-  }
+.extra-products__list {
+  list-style: none;
+  padding: 0px 20px;
+  margin: 0px;
+  margin-bottom: 39px;
+}
 
-  &__card {
-    width: 280px;
-    border-top: 1px solid @grey-border;
-  }
-
-  &__card:last-child {
+.extra-products__card {
+  width: 280px;
+  border-top: 1px solid @grey-border;
+  &:last-child {
     border-bottom: 1px solid @grey-border;
   }
-
-  &__name {
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400px;
-    text-align: left;
-    text-transform: uppercase;
-    color: @special-dark-text;
-  }
-
-  &__link {
-    display: block;
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 400px;
-    color: @basic-white;
-    text-align: center;
-    background-color: @green;
-    width: 62px;
-    padding: 10px 109px;
-    margin-bottom: 25px;
-  }
-
-  &__info {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 15px;
-    color: @special-dark-grey;
-    width: 280px;
-
-  }
-
-  &__price {
-    text-transform: uppercase;
-    text-align: right;
-  }
-
-  &__text {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400px;
-    text-align: center;
-    color: @basic-white;
-    background-color: @green;
-    width: 161px;
-    padding-top: 186px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 43px;
-  }
-
 }
+
+
+.extra-products__name {
+  font-family: @font-oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: @special-dark-text;
+}
+
+.extra-products__link {
+  .green-button;
+  font-size: 16px;
+  width: 62px;
+  padding: 10px 109px;
+  margin-bottom: 25px;
+}
+
+.extra-products__info {
+  font-size: 14px;
+  line-height: 14px;
+  width: 280px;
+  margin-bottom: 15px;
+}
+
+.extra-products__price {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.extra-products__text {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400px;
+  text-align: center;
+  color: @basic-white;
+  background-color: @green;
+  width: 161px;
+  padding-top: 186px;
+  padding-left: 60px;
+  padding-bottom: 43px;
+  padding-right: 60px;
+  margin-bottom: 35px;
+}
+
 

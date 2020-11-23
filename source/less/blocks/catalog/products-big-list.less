@@ -3,37 +3,28 @@
   border-bottom: 1px solid @grey-border;
   padding: 0 20px;
   padding-top: 79px;
+}
 
-
-  &__text, &__link {
-    font-weight: 400px;
-    text-align: center;
-    color: @special-dark-grey;
-  }
-
-  &__text {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    list-style: 16px;
-  }
-
-  &__text--bold {
-    font-family: "Oswald", Arial, sans-serif;
+.products-big-list__text {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  &--bold {
+    font-family: @font-oswald;
     font-size: 16px;
-    color: @black-text;
     line-height: 20px;
     text-transform: uppercase;
-  }
-
-  &__link {
-    display: block;
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: @basic-grey;
-    width: 91px;
-    padding: 10px 94px;
-    margin-bottom: 25px;
+    color: @black-text;
   }
 }
 
+.products-big-list__link {
+  .green-button;
+  font-size: 16px;
+  color: @special-dark-grey;
+  width: 91px;
+  padding: 10px 94px;
+  margin-bottom: 25px;
+  background-color: @basic-grey;
+}

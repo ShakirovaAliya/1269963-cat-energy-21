@@ -1,46 +1,37 @@
 .programs {
   padding: 0 20px;
-  margin: 0 auto;
+}
 
-  &__button {
-    display: block;
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    font-weight: 400px;
-    color: @basic-white;
-    text-align: center;
-    background-color: @green;
-    width: 192px;
-    padding: 7px 44px;
-    margin-bottom: 22px;
-  }
+.programs__button {
+  .green-button;
+  font-size: 14px;
+  line-height: 18px;
+  width: 192px;
+  padding: 7px 44px;
+  margin-bottom: 22px;
+}
 
-  &__card {
-    background-color: @basic-grey;
-    margin-bottom: 20px;
-  }
+.programs__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-  }
+.programs__card {
+  background-color: @basic-grey;
+  margin-bottom: 20px;
+}
 
-  &__title {
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 37px;
-    font-weight: 400px;
-    color: @basic-black;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-left: 91px;
-    position: relative;
-  }
+.programs__title {
+  .heading;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 91px;
+  position: relative;
 
-  &__title::before {
+  &::before {
     position: absolute;
     content: "";
     width: 50px;
@@ -50,55 +41,49 @@
     background-color: @green;
     border-radius: 50%;
   }
+}
 
-  &__description {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400px;
-    color: @special-dark-grey;
-    text-align: left;
-    padding-bottom: 23px;
-    width: 240px;
-    margin: 0 auto;
-    border-bottom: 1px solid @grey-line;
-  }
+.programs__description {
+  width: 240px;
+  padding-bottom: 23px;
+  margin: 0 auto;
+  border-bottom: 1px solid @grey-line;
+}
 
-  &__link {
-    display: block;
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400px;
-    color: @basic-black;
-    text-transform: uppercase;
-    padding-top: 19px;
-    padding-bottom: 22px;
-    padding-left: 19px;
-    position: relative;
-  }
+.programs__link {
+  .heading;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  padding-left: 19px;
+  position: relative;
 
-  &__link::before {
+  &::before {
     position: absolute;
     content: "";
     width: 18px;
     height: 2px;
-    background-color: @basic-black;
     left: 119px;
     top: 25px;
+    background-color: @basic-black;
   }
 
-  &__link::after {
+  &::after {
     position: absolute;
     content: "";
-    background-color: transparent;
     width: 0px;
     height: 0px;
-    border: 5px solid transparent;
-    border-left: 5px solid @basic-black;
     left: 135px;
     top: 21px;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-left: 5px solid @basic-black;
   }
 }
+
+
 
 

@@ -1,24 +1,22 @@
 .copyright {
   padding: 0 20px;
-  margin: 0 auto;
+}
 
-  &__link {
-    display: block;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: @special-dark-grey;
-    text-align: left;
-    position: relative;
-  }
-
-  &__link::after {
+.copyright__link {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  &::after {
     position: absolute;
     content: "";
     display: block;
     width: 27px;
     height: 34px;
     background-color: @grey-icon;
-    right: 0px;
+    right: 10px;
     top: -5px;
   }
 }
+
+

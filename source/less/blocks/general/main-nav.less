@@ -1,16 +1,25 @@
 .main-nav {
-  &__toggle {
-    position: absolute;
-    border: none;
-    width: 18px;
-    height: 18px;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    background-color: transparent;
-  }
+  font-family: @font-oswald;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: @basic-black;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
 
-  &__toggle::before, &__toggle::after {
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::before, &::after {
     position: absolute;
     content: "";
     background-color: @basic-black;
@@ -22,13 +31,12 @@
     cursor: pointer;
   }
 
-  &__toggle::before {
+  &::before {
     transform: rotate(45deg);
   }
 
-  &__toggle::after {
+  &::after {
     transform: rotate(-45deg);
   }
 }
-
 
