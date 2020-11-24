@@ -4,7 +4,7 @@
   font-size: 24px;
   line-height: 24px;
   padding-left: 20px;
-  padding-right: 0px;
+  padding-right: 0;
   margin-bottom: 35px;
   position: relative;
   &::after {
@@ -12,7 +12,7 @@
     content: "";
     width: 53px;
     height: 2px;
-    right: 0px;
+    right: 0;
     top: 15px;
     background-color: @green;
   }
@@ -20,8 +20,8 @@
 
 .extra-products__list {
   list-style: none;
-  padding: 0px 20px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 39px;
 }
 
@@ -35,18 +35,15 @@
 
 
 .extra-products__name {
-  font-family: @font-oswald;
+  font-family: @decor-font;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
-  text-align: left;
   text-transform: uppercase;
   color: @special-dark-text;
 }
 
 .extra-products__link {
-  .green-button;
-  font-size: 16px;
+  .button;
   width: 62px;
   padding: 10px 109px;
   margin-bottom: 25px;
@@ -68,7 +65,6 @@
   margin: 0 auto;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400px;
   text-align: center;
   color: @basic-white;
   background-color: @green;

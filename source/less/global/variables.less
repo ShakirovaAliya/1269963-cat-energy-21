@@ -18,8 +18,9 @@
 
 
 // fonts //
-@font-oswald: "Oswald", Arial, sans-serif;
-@font-arial: Arial, sans-serif;
+@base-font: Arial, Helvetica, sans-serif;
+@decor-font: "Oswald", @base-font;
+
 
 // viewports //
 
@@ -31,28 +32,31 @@
 
 // mixin //
 
-.heading() {
-  font-family: @font-oswald;
+.page-heading() {
+  font-family: @decor-font;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
-  text-align: left;
   color: @basic-black;
 }
 
-.white-heading() {
+.index-heading() {
   color: @basic-white;
   text-align: center;
   background-color: @green;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-.green-button() {
+.button() {
   display: block;
-  font-family: @font-oswald;
-  font-weight: 400;
+  font-family: @decor-font;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   color: @basic-white;
   background-color: @green;
+}
+
+.black-uppercase-text() {
+  color: @basic-black;
+  text-transform: uppercase;
 }
