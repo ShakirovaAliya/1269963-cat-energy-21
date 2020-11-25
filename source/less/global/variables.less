@@ -16,31 +16,21 @@
 @green: #68b738;
 @red: #ff8282;
 
-
 // fonts //
-
-@base-font: Arial, Helvetica, sans-serif;
+@base-font: "Arial", "Tahoma", sans-serif;
 @decor-font: "Oswald", @base-font;
 
-
 // viewports //
-
 @mobile-width: 320px;
 @tablet-width: 768px;
-@desktop-width: 1200px;
-
+@desktop-width: 1440px;
 
 // mixin //
-
-.container() {
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .page-heading() {
   font-family: @decor-font;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: @basic-black;
 }
 
@@ -64,4 +54,17 @@
 .black-uppercase-text() {
   color: @basic-black;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.product-name() {
+  font-family: @decor-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-info() {
+  font-size: 12px;
+  line-height: 16px;
 }

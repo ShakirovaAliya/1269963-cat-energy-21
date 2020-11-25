@@ -1,22 +1,21 @@
 .example-result {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 .example-result__item {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  width: 124px;
-  margin-right: 30px;
+  width: 122px;
+  margin-bottom: 25px;
   border: 1px solid @special-grey;
   border-radius: 5px;
 
-  &:nth-child(2n) {
-    margin-right: 0;
+  &--weight {
+    margin-right: 30px;
   }
 }
 
@@ -42,4 +41,3 @@
   position: absolute;
   top: 260px;
 }
-

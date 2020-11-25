@@ -9,32 +9,36 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="37"
-        alt="Кэт энерджи">
-    </a>
-    <a class="page-header__title" href="index.html"><b>Cat</b> energy</a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <div class="page-header__container container">
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="37"
+            alt="Кэт энерджи">
+        </a>
+        <a class="page-header__title" href="index.html"><b>Cat</b> energy</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
   <main class="form-main">
     <h1 class="form-main__heading">Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
@@ -114,7 +118,7 @@
       <h2 class="visually-hidden">
         Адрес
       </h2>
-      <div class="address__wrapper">
+      <div class="address__wrapper address__wrapper--bg container">
         <p class="address__text">
           Приглашаем к сотрудничеству дилеров!
         </p>
@@ -127,9 +131,9 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <p class="page-footer__heading"><b>Cat</b> energy</p>
-    <div class="page-footer__social social">
+    <div class="page-footer__social social wrapper">
       <h2 class="visually-hidden">
         Социальные сети
       </h2>
@@ -148,7 +152,7 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="page-footer__copyright copyright wrapper">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>

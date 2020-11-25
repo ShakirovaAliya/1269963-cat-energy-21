@@ -1,3 +1,7 @@
+.products {
+  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
+}
 
 .products__list {
   list-style: none;
@@ -9,7 +13,7 @@
 }
 
 .products__item {
-  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
 }
 
 .products__card {
@@ -25,21 +29,16 @@
 
 .products__name-link {
   display: block;
-  font-family: @decor-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  .product-name;
   color: @special-dark-text;
   width: 76px;
   margin-bottom: 14px;
 }
 
 .products__info {
-  font-size: 12px;
-  line-height: 16px;
+  .product-info;
   margin-bottom: 22px;
   width: 142px;
-
 }
 
 .products__data {
@@ -49,6 +48,7 @@
 .products__value {
   text-align: right;
   padding-left: 30px;
+
   &--price {
     text-transform: uppercase;
   }
@@ -56,12 +56,8 @@
 
 .products__link {
   .button;
+  line-height: 20px;
   width: 62px;
   padding: 10px 109px;
   margin-bottom: 25px;
 }
-
-
-
-
-

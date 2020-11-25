@@ -9,38 +9,45 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="37"
-        alt="Кэт энерджи">
-    </a>
-    <a class="page-header__title" href="index.html"><b>Cat</b> energy</a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="catalog-main">
+    <div class="page-header__container container">
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="37"
+            alt="Кэт энерджи">
+        </a>
+        <a class="page-header__title" href="index.html"><b>Cat</b> energy</a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<main class="catalog-main">
+  <div class="container">
     <h1 class="catalog-main__heading">Каталог продукции</h1>
-    <section class="products">
-      <h2 class="visually-hidden">Список продуктов</h2>
-      <ul class="products__list">
-        <li class="products__item">
+  </div>
+  <section class="products container">
+    <h2 class="visually-hidden">Список продуктов</h2>
+    <ul class="products__list">
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -69,8 +76,10 @@
             </div>
           </div>
           <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -99,8 +108,10 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -129,8 +140,10 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -159,8 +172,10 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -189,8 +204,10 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -219,8 +236,10 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="wrapper">
           <div class="products__card">
             <div class="products__wrapper products__wrapper--photo">
               <a class="products__photo-link" href="product.html">
@@ -249,110 +268,113 @@
             </div>
           </div>
             <a class="products__link" href="cart.html">Заказать</a>
-        </li>
-      </ul>
-      <div class="products-big-list">
-        <p class="products-big-list__text products-big-list__text--bold">Показать еще 100500 товаров</p>
-        <p class="products-big-list__text">На самом деле вкусов гораздо больше!</p>
-        <a class="products-big-list__link" href="products.html">Показать все</a>
-      </div>
-    </section>
-    <section class="extra-products">
-      <h2 class="extra-products__heading">Дополнительные товары</h2>
-      <ul class="extra-products__list">
-        <li class="extra-products__item">
-          <div class="extra-products__card">
-            <h3 class="extra-products__name">Сахарозаменитель</h3>
-            <table class="extra-products__info">
-              <tr>
-                <td>1 упаковка (100 г)</td>
-                <td class="extra-products__price">200 р.</td>
-              </tr>
-            </table>
-            <a class="extra-products__link" href="cart.html">Заказать</a>
-          </div>
-        </li>
-        <li class="extra-products__item">
-          <div class="extra-products__card">
-            <h3 class="extra-products__name">Питьевая вода</h3>
-            <table class="extra-products__info">
-              <tr>
-                <td>5 литров</td>
-                <td class="extra-products__price">50 р.</td>
-              </tr>
-            </table>
-            <a class="extra-products__link" href="cart.html">Заказать</a>
-          </div>
-        </li>
-        <li class="extra-products__item">
-          <div class="extra-products__card">
-            <h3 class="extra-products__name">Молоко</h3>
-            <table class="extra-products__info">
-              <tr>
-                <td>1 литр</td>
-                <td class="extra-products__price">100 р.</td>
-              </tr>
-            </table>
-            <a class="extra-products__link" href="cart.html">Заказать</a>
-          </div>
-        </li>
-        <li class="extra-products__item">
-          <div class="extra-products__card">
-            <h3 class="extra-products__name">Витамины</h3>
-            <table class="extra-products__info">
-              <tr>
-                <td>1 упаковка (30 г)</td>
-                <td class="extra-products__price">300 р.</td>
-              </tr>
-            </table>
-            <a class="extra-products__link" href="cart.html">Заказать</a>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="products-big-list wrapper">
+      <p class="products-big-list__text products-big-list__text--bold">Показать еще 100500 товаров</p>
+      <p class="products-big-list__text">На самом деле вкусов гораздо больше!</p>
+      <a class="products-big-list__link" href="products.html">Показать все</a>
+    </div>
+  </section>
+  <section class="extra-products container">
+    <h2 class="extra-products__heading">Дополнительные товары</h2>
+    <ul class="extra-products__list">
+      <li class="extra-products__item wrapper">
+        <div class="extra-products__card">
+          <h3 class="extra-products__name">Сахарозаменитель</h3>
+          <table class="extra-products__info">
+            <tr>
+              <td>1 упаковка (100 г)</td>
+              <td class="extra-products__price">200 р.</td>
+            </tr>
+          </table>
+          <a class="extra-products__link" href="cart.html">Заказать</a>
+        </div>
+      </li>
+      <li class="extra-products__item wrapper">
+        <div class="extra-products__card">
+          <h3 class="extra-products__name">Питьевая вода</h3>
+          <table class="extra-products__info">
+            <tr>
+              <td>5 литров</td>
+              <td class="extra-products__price">50 р.</td>
+            </tr>
+          </table>
+          <a class="extra-products__link" href="cart.html">Заказать</a>
+        </div>
+      </li>
+      <li class="extra-products__item wrapper">
+        <div class="extra-products__card">
+          <h3 class="extra-products__name">Молоко</h3>
+          <table class="extra-products__info">
+            <tr>
+              <td>1 литр</td>
+              <td class="extra-products__price">100 р.</td>
+            </tr>
+          </table>
+          <a class="extra-products__link" href="cart.html">Заказать</a>
+        </div>
+      </li>
+      <li class="extra-products__item wrapper">
+        <div class="extra-products__card extra-products__card--vitamins">
+          <h3 class="extra-products__name">Витамины</h3>
+          <table class="extra-products__info">
+            <tr>
+              <td>1 упаковка (30 г)</td>
+              <td class="extra-products__price">300 р.</td>
+            </tr>
+          </table>
+          <a class="extra-products__link" href="cart.html">Заказать</a>
+        </div>
+      </li>
+    </ul>
+    <div class="wrapper">
       <p class="extra-products__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
-    <section class="address">
-      <h2 class="visually-hidden">
-        Адрес
-      </h2>
-      <div class="address__wrapper address__wrapper--catalog">
-        <p class="address__text">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="address__info">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
-      </div>
-      <div class="address__map">
+    </div>
+  </section>
+  <section class="address">
+    <h2 class="visually-hidden">
+      Адрес
+    </h2>
+    <div class="address__wrapper address__wrapper--bg container">
+      <p class="address__text">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <p class="address__info">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </p>
+    </div>
+    <div class="address__map">
 
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <p class="page-footer__heading"><b>Cat</b> energy</p>
-    <div class="page-footer__social social">
-      <h2 class="visually-hidden">
-        Социальные сети
-      </h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
-              class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
-              class="visually-hidden">Инстаграм</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
-              class="visually-hidden">Фейсбук</span></a>
-        </li>
-      </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-  </footer>
+  </section>
+</main>
+<footer class="page-footer container">
+  <p class="page-footer__heading"><b>Cat</b> energy</p>
+  <div class="page-footer__social social wrapper">
+    <h2 class="visually-hidden">
+      Социальные сети
+    </h2>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+            class="visually-hidden">Вконтакте</span></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span
+            class="visually-hidden">Инстаграм</span></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+            class="visually-hidden">Фейсбук</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright wrapper">
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
 
 </body>
 
