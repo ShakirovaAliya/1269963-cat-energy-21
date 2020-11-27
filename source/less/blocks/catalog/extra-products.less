@@ -1,19 +1,22 @@
+.extra-products {
+  .container;
+}
+
 .extra-products__heading {
   .page-heading;
   font-size: 24px;
   line-height: 24px;
-  padding-left: 20px;
-  padding-right: 0;
   margin-bottom: 35px;
-  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 
   &::after {
-    position: absolute;
     content: "";
-    width: 53px;
+    flex-grow: 1;
+    flex-shrink: 0;
     height: 2px;
-    right: 0;
-    top: 15px;
+    margin-left: 22px;
     background-color: @green;
   }
 }
@@ -25,12 +28,16 @@
   margin-bottom: 39px;
 }
 
+.extra-products__item {
+  .wrapper;
+}
+
 .extra-products__card {
   border-top: 1px solid @grey-border;
+}
 
-  &--vitamins {
-    border-bottom: 1px solid @grey-border;
-  }
+.extra-products__item:last-child .extra-products__card {
+  border-bottom: 1px solid @grey-border;
 }
 
 .extra-products__name {
@@ -59,6 +66,7 @@
 }
 
 .extra-products__text {
+  .wrapper;
   font-size: 16px;
   line-height: 20px;
   text-align: center;

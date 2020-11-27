@@ -1,19 +1,19 @@
+.copyright {
+  .wrapper;
+}
+
 .copyright__link {
-  display: block;
   font-size: 16px;
   color: @special-dark-grey;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &::after {
-    position: absolute;
     content: "";
     display: block;
     width: 27px;
     height: 34px;
     background-color: @grey-icon;
-    right: 0;
-    top: -5px;
   }
 }
