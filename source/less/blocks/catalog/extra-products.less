@@ -1,7 +1,3 @@
-.extra-products {
-  .container;
-}
-
 .extra-products__heading {
   .page-heading;
   font-size: 24px;
@@ -30,14 +26,14 @@
 
 .extra-products__item {
   .wrapper;
+
+  &:last-child .extra-products__card {
+    border-bottom: 1px solid @grey-border;
+  }
 }
 
 .extra-products__card {
   border-top: 1px solid @grey-border;
-}
-
-.extra-products__item:last-child .extra-products__card {
-  border-bottom: 1px solid @grey-border;
 }
 
 .extra-products__name {
