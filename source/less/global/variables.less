@@ -27,25 +27,26 @@
 @desktop-width: 1440px;
 
 // mixin //
+.wrapper() {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .page-heading() {
-  font-family: @decor-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: @basic-black;
 }
 
-.index-heading() {
-  color: @basic-white;
-  text-align: center;
-  background-color: @green;
-  margin-top: 0;
+.description() {
+  font-family: @base-font;
+  line-height: 18px;
 }
 
 .button() {
   display: block;
-  font-family: @decor-font;
   font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: @basic-white;
@@ -59,7 +60,6 @@
 }
 
 .product-name() {
-  font-family: @decor-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -68,17 +68,4 @@
 .product-info() {
   font-size: 12px;
   line-height: 16px;
-}
-
-.container() {
-  width: @mobile-width;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-.wrapper() {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
 }
