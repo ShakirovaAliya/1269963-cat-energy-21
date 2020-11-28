@@ -2,8 +2,9 @@
   .wrapper;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .example-result__item {
@@ -21,11 +22,10 @@
 }
 
 .example-result__count {
+  .black-uppercase-text;
   font-size: 24px;
   line-height: 24px;
-  color: @basic-black;
   text-align: center;
-  text-transform: uppercase;
   padding-top: 14px;
   margin-top: 0;
 }

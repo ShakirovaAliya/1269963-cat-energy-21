@@ -1,11 +1,11 @@
 .example {
   background-color: @bg-grey;
   position: relative;
-  margin: 0 auto;
 }
 
 .example__wrapper {
   .wrapper;
+  box-sizing: border-box;
 }
 
 .example__heading {
@@ -24,7 +24,8 @@
   .page-heading;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 42px;
 }
