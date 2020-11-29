@@ -1,31 +1,24 @@
 .example {
   background-color: @bg-grey;
-  position: relative;
 }
 
 .example__wrapper {
   .wrapper;
-  box-sizing: border-box;
 }
 
 .example__heading {
-  .page-heading;
-  line-height: 40px;
+  .heading(36px; 40px; @basic-black);
   padding-top: 27px;
 }
 
 .example__description {
-  .description;
+  .description(14px; 18px; @special-dark-grey);
   margin-bottom: 25px;
   width: 279px;
 }
 
 .example__costs {
-  .page-heading;
-  font-size: 14px;
-  line-height: 20px;
+  .heading(14px; 20px; @basic-black);
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 42px;
+  margin: 0 auto 42px;
 }

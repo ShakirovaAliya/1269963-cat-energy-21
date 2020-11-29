@@ -6,22 +6,18 @@
 
 .address__wrapper {
   .wrapper;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .address__text {
-  .black-uppercase-text;
-  font-size: 16px;
-  line-height: 18px;
-  color: @black-text;
+  .heading(16px; 18px; @basic-black);
+  .uppercase-text;
   width: 140px;
 }
 
 .address__info {
-  font-family: @base-font;
-  line-height: 20px;
+  .description(14px; 20px; @special-dark-grey);
   width: 140px;
 }

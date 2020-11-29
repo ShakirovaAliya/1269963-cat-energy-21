@@ -8,7 +8,6 @@
 @special-dark-grey: #444444;
 @bg-grey: #eaeaea;
 @special-grey: #cdcdcd;
-@bg-footer-grey: #ebebeb;
 @grey-icon: #666666;
 @grey-border: #e6e6e6;
 @grey-border-input: #e7e7e7;
@@ -33,22 +32,26 @@
   padding: 0 20px;
 }
 
-.page-heading() {
+.heading(@font-size; @line-height; @color) {
   font-family: @decor-font;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
   font-weight: 400;
 }
 
-.description() {
+.description(@font-size; @line-height; @color) {
   font-family: @base-font;
-  line-height: 18px;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+  text-transform: none;
 }
 
-.button() {
+.button(@font-size: 16px) {
   display: block;
   font-family: @decor-font;
-  font-size: 16px;
+  font-size: @font-size;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -58,25 +61,25 @@
   padding: 10px 109px;
 }
 
-.black-uppercase-text() {
+.uppercase-text(@color: @basic-black) {
   font-family: @decor-font;
-  color: @basic-black;
+  color: @color;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-.product-name() {
+.product-name(@line-height: 20px;) {
   font-family: @decor-font;
   font-size: 16px;
-  line-height: 20px;
+  line-height: @line-height;
   text-transform: uppercase;
   font-weight: 400;
   color: @special-dark-text;
 }
 
-.product-info() {
+.product-info(@font-size; @line-height) {
   font-family: @base-font;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: @font-size;
+  line-height: @line-height;
   color: @special-dark-grey;
 }

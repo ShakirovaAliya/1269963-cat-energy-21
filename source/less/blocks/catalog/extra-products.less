@@ -1,37 +1,31 @@
+.extra-products {
+  .wrapper;
+}
+
 .extra-products__heading {
-  font-family: @decor-font;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: @basic-black;
-  width: 301px;
-  padding-left: 19px;
-  margin: 0 auto;
+  .heading(24px; 24px; @basic-black);
   margin-bottom: 35px;
 }
 
 .extra-products__list {
-  .wrapper;
-  box-sizing: border-box;
   list-style: none;
+  padding: 0;
+  margin: 0;
   margin-bottom: 39px;
 }
 
 .extra-products__name {
-  .product-name;
-  line-height: 16px;
+  .product-name(16px);
 }
 
 .extra-products__link {
   .button;
+  width: 280px;
   margin-bottom: 25px;
 }
 
 .extra-products__info {
-  font-family: @base-font;
-  font-size: 14px;
-  line-height: 14px;
-  color: @special-dark-grey;
+  .product-info(14px; 14px);
   width: 280px;
   margin-bottom: 15px;
 }
@@ -42,21 +36,15 @@
 }
 
 .extra-products__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  font-family: @base-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: @basic-white;
+  .description(16px; 20px; @basic-white);
+  text-align: center;
   background-color: @green;
+  margin-bottom: 35px;
   padding-top: 186px;
   padding-bottom: 43px;
-  text-align: center;
-  margin-bottom: 35px;
 }
 
 .extra-products__text {
+  margin: 0 auto;
   width: 161px;
-  padding-left: 58px;
-  padding-right: 61px;
 }

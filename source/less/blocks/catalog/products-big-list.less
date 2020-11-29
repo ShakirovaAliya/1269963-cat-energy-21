@@ -1,27 +1,22 @@
 .products-big-list {
   .wrapper;
-  box-sizing: border-box;
   padding-top: 79px;
 }
 
 .products-big-list__text {
-  .product-info;
+  .product-info(12px; 16px);
   text-align: center;
 
   &--bold {
-    font-family: @decor-font;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: @black-text;
-    text-transform: uppercase;
+    .heading(16px; 20px; @black-text);
+    .uppercase-text;
   }
 }
 
 .products-big-list__link {
   .button;
   color: @special-dark-grey;
-  width: 92px;
+  width: 280px;
   padding: 20px 94px;
   margin-bottom: 25px;
   background-color: @basic-grey;
