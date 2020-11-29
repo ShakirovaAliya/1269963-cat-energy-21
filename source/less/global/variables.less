@@ -1,0 +1,85 @@
+// colors //
+@basic-white: #ffffff;
+@basic-black: #000000;
+@black-text: #111111;
+@special-dark-text: #222222;
+@basic-grey: #f2f2f2;
+@grey-line: #d9d9d9;
+@special-dark-grey: #444444;
+@bg-grey: #eaeaea;
+@special-grey: #cdcdcd;
+@grey-icon: #666666;
+@grey-border: #e6e6e6;
+@grey-border-input: #e7e7e7;
+@hover-grey-border: #bababa;
+@grey-plus: #d3d3d3;
+@green: #68b738;
+@red: #ff8282;
+
+// fonts //
+@base-font: "Arial", "Tahoma", sans-serif;
+@decor-font: "Oswald", @base-font;
+
+// viewports //
+@mobile-width: 320px;
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
+// mixin //
+.wrapper() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heading(@font-size; @line-height; @color) {
+  font-family: @decor-font;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+  font-weight: 400;
+}
+
+.description(@font-size; @line-height; @color) {
+  font-family: @base-font;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @color;
+  text-transform: none;
+}
+
+.button(@font-size: 16px) {
+  display: block;
+  font-family: @decor-font;
+  font-size: @font-size;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic-white;
+  background-color: @green;
+  width: 62px;
+  padding: 10px 109px;
+}
+
+.uppercase-text(@color: @basic-black) {
+  font-family: @decor-font;
+  color: @color;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.product-name(@line-height: 20px;) {
+  font-family: @decor-font;
+  font-size: 16px;
+  line-height: @line-height;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: @special-dark-text;
+}
+
+.product-info(@font-size; @line-height) {
+  font-family: @base-font;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @special-dark-grey;
+}

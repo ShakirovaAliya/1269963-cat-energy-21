@@ -1,0 +1,43 @@
+.main-nav {
+  .wrapper;
+  padding: 0;
+  font-family: @decor-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: @basic-black;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+  width: 18px;
+  height: 18px;
+  top: -30px;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: @basic-black;
+    width: 20px;
+    height: 1px;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

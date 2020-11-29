@@ -1,0 +1,29 @@
+.details {
+  .wrapper;
+}
+
+.details__heading {
+  .heading(36px; 40px; @basic-black);
+}
+
+.details__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details__item {
+  .description(14px; 18px; @special-dark-grey);
+  padding-bottom: 26px;
+  padding-left: 80px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    left: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.address {
+  &--grey-bg {
+    background-color: @basic-grey;
+  }
+}
+
+.address__wrapper {
+  .wrapper;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address__text {
+  .heading(16px; 18px; @basic-black);
+  .uppercase-text;
+  width: 140px;
+}
+
+.address__info {
+  .description(14px; 20px; @special-dark-grey);
+  width: 140px;
+}
