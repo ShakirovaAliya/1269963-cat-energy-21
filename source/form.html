@@ -19,7 +19,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a href="index.html">
             Главная
           </a>
@@ -29,34 +29,32 @@
             Каталог продукции
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a>
             Подбор программы
           </a>
         </li>
       </ul>
     </nav>
-</header>
+  </header>
   <main class="form-main">
-    <div class="form-main__heading">
-      <h1 class="form-main__title">Подбор программы</h1>
-      <p class="form-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    </div>
+    <h1 class="form-main__heading">Подбор программы</h1>
+    <p class="form-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__item form__item--info">
         <legend class="visually-hidden">Информация о питомце</legend>
         <div class="form__wrapper">
           <p class="form__point">
             <label for="catName">Имя:<sup>*</sup></label>
-            <input class="form__input form__input--name" type="text" id="catName" placeholder="Барсик" required>
+            <input class="form__field form__field--name" type="text" id="catName" placeholder="Барсик" required>
           </p>
           <p class="form__point">
             <label for="catWeight">Вес (кг):<sup>*</sup></label>
-            <input class="form__input form__input--weight" type="number" id="catWeight" placeholder="7" required>
+            <input class="form__field form__field--weight" type="number" id="catWeight" placeholder="7" required>
           </p>
           <p class="form__point">
             <label for="catAge">Возраст (лет):</label>
-            <input class="form__input form__input--age" type="number" id="catAge" placeholder="7">
+            <input class="form__field form__field--age" type="number" id="catAge" placeholder="7">
           </p>
         </div>
       </fieldset>
@@ -84,11 +82,11 @@
           <div class="form__wrapper">
             <p>
               <label for="contactMail">E-mail:<sup>*</sup></label>
-              <input class="form__input form__input--mail" type="email" id="contactMail" placeholder="kuklachev@gmail.com" required>
+              <input class="form__field form__field--mail" type="email" id="contactMail" placeholder="kuklachev@gmail.com" required>
             </p>
             <p>
               <label for="contactTel">Телефон:<sup>*</sup></label>
-              <input class="form__input form__input--tel" type="tel" id="contactTel" placeholder="8 (960) 900-60-90" required>
+              <input class="form__field form__field--tel" type="tel" id="contactTel" placeholder="8 (960) 900-60-90" required>
             </p>
           </div>
       </fieldset>
@@ -125,7 +123,7 @@
       </fieldset>
       <div class="form__footer">
         <button class="form__button" type="submit">Отправить заявку</button>
-        <div class="form__note"><sup>*</sup> — Обязательные поля</div>
+        <div class="form__note"><sup>*</sup> &mdash; Обязательные поля</div>
       </div>
 
       </div>
