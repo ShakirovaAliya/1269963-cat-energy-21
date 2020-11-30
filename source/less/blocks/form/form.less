@@ -1,0 +1,205 @@
+.form {
+  padding-bottom: 32px;
+}
+
+.form__item {
+  .form-font;
+  border: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.form__title {
+  .wrapper;
+  padding-right: 0;
+  margin-bottom: 30px;
+}
+
+.form__legend {
+  .heading(24px; 26px; @basic-black);
+  text-transform: none;
+
+  &--contacts {
+    width: 187px;
+  }
+}
+
+.form__wrapper {
+  .wrapper;
+  text-transform: uppercase;
+}
+
+.form__point {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__field {
+  .form-font;
+  border: 1px solid @grey-border-input;
+  padding: 14px;
+
+  &::placeholder {
+    .form-font;
+    text-transform: uppercase;
+  }
+
+  &--name {
+    width: 228px;
+  }
+
+  &--weight {
+    width: 191px;
+  }
+
+  &--age {
+    width: 172px;
+  }
+
+  &--mail {
+    width: 219px;
+  }
+
+  &--tel {
+    width: 200px;
+  }
+}
+
+.form__list {
+  .wrapper;
+  list-style: none;
+  text-transform: uppercase;
+
+  &--goal {
+    color: @special-dark-text;
+  }
+
+  &--extra {
+    color: @basic-black;
+  }
+}
+
+.form__option {
+  margin-bottom: 20px;
+
+  & label {
+    .form-font;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.form__radio {
+  .form-font;
+  display: none;
+
+  & + label {
+    position: relative;
+    padding-left: 46px;
+    cursor: pointer;
+  }
+
+  & + label::before {
+    position: absolute;
+    content: "";
+    border: 1px solid @special-grey;
+    cursor: pointer;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  & + label::after {
+    display: none;
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: 9px;
+    top: 3px;
+    background-color: @green;
+  }
+
+  &:checked + label::after {
+    display: block;
+  }
+}
+
+.form__checkbox {
+  .form-font;
+  display: none;
+
+  & + label {
+    position: relative;
+    padding-left: 46px;
+    cursor: pointer;
+  }
+
+  & + label::before {
+    position: absolute;
+    content: "";
+    border: 1px solid @special-grey;
+    cursor: pointer;
+    left: 0;
+    width: 26px;
+    height: 26px;
+  }
+
+  & + label::after {
+    display: none;
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    width: 7px;
+    height: 13px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid @green;
+    border-right: 2px solid @green;
+    transform: rotate(45deg);
+    background-color: transparent;
+    left: 10px;
+    top: 0;
+  }
+
+  &:checked + label::after {
+    display: block;
+  }
+}
+
+.form__textarea {
+  .form-font;
+  color: @special-dark-grey;
+  width: 280px;
+  height: 150px;
+  border: 1px solid @grey-border-input;
+  padding: 13px 12px 0 15px;
+
+  &::placeholder {
+    .form-font;
+    text-transform: uppercase;
+  }
+}
+
+.form__footer {
+  .wrapper;
+  text-align: center;
+}
+
+.form__button {
+  .button;
+  font-weight: 400;
+  width: 280px;
+  border: none;
+  padding: 7px 44px;
+  margin-bottom: 20px;
+}
+
+.form__note {
+  .description(14px; 16px; @basic-black);
+}
