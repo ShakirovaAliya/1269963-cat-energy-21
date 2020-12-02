@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -90,40 +91,44 @@
     </div>
   </section>
   <section class="example">
-    <div class="example__wrapper">
-      <h2 class="example__heading">
+    <div class="example__heading">
+      <h2 class="example__title">
         Живой пример
       </h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
     </div>
-    <div class="example-result">
-      <div class="example-result__item example-result__item--weight">
-        <p class="example-result__count">5 кг</p>
-        <p class="example-result__text">снижение веса</p>
+    <div class="example__desktop-wrapper">
+      <div class="example__wrapper">
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example-result">
+          <div class="example-result__item example-result__item--weight">
+            <p class="example-result__count">5 кг</p>
+            <p class="example-result__text">снижение веса</p>
+          </div>
+          <div class="example-result__item example-result__item--duration">
+            <p class="example-result__count">60 дней</p>
+            <p class="example-result__text">затрачено времени</p>
+          </div>
+          <p class="example-result__costs">Затраты на питание: 15 000 руб.</p>
+        </div>
       </div>
-      <div class="example-result__item example-result__item--duration">
-        <p class="example-result__count">60 дней</p>
-        <p class="example-result__text">затрачено времени</p>
+      <div class="example__slider slider">
+        <ul class="slider__list">
+          <li class="slider__item slider__item--before slider__item--current">
+            <img class="slider__photo slider__photo--before" src="https://via.placeholder.com/150x150" width="311"
+              height="232" alt="Фото до">
+          </li>
+          <li class="slider__item slider__item--after">
+            <img class="slider__photo slider__photo--after" src="https://via.placeholder.com/150x150" width="311"
+              height="232" alt="Фото после">
+          </li>
+        </ul>
+        <div class="slider__toggles-wrapper">
+        </div>
       </div>
-      <p class="example__costs">Затраты на питание: 15 000 руб.</p>
     </div>
-    <div class="example__slider slider">
-      <ul class="slider__list">
-        <li class="slider__item slider__item--before slider__item--current">
-          <img class="slider__photo slider__photo--before" src="https://via.placeholder.com/150x150" width="311"
-            height="232" alt="Фото до">
-        </li>
-        <li class="slider__item slider__item--after">
-          <img class="slider__photo slider__photo--after" src="https://via.placeholder.com/150x150" width="311"
-            height="232" alt="Фото после">
-        </li>
-      </ul>
-      <div class="slider__toggles-wrapper">
-      </div>
-  </div>
   </section>
   <section class="address">
     <h2 class="visually-hidden">

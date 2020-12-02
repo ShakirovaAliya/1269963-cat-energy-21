@@ -7,17 +7,41 @@
 .address__wrapper {
   .wrapper;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 51px 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 66px 89px 51px 76px;
+    margin-left: 110px;
+  }
 }
 
 .address__text {
   .heading(16px; 18px; @basic-black);
   .uppercase-text;
   width: 140px;
+
+  @media (min-width: @tablet-width) {
+    .heading(20px; 21px; @basic-black);
+    margin-right: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 87px;
+  }
 }
 
 .address__info {
   .description(14px; 20px; @special-dark-grey);
   width: 140px;
+
+  @media (min-width: @tablet-width) {
+    .description(16px; 20px; @special-dark-grey);
+    width: 159px;
+    text-align: right;
+  }
 }

@@ -3,12 +3,31 @@
   padding: 27px 0;
   margin-bottom: 5px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 49px;
+  }
 }
 
 .page-main__title {
   .heading(36px; 36px; @basic-white);
   width: 249px;
   margin: 0 auto 25px;
+
+  @media (min-width: @tablet-width) {
+    .heading(60px; 60px; @basic-black);
+    width: 414px;
+    margin-bottom: 41px;
+    margin-left: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+    margin-left: 190px;
+  }
 }
 
 .page-main__slogan {
@@ -16,4 +35,15 @@
   text-transform: uppercase;
   width: 198px;
   margin: 0 auto 29px;
+
+  @media (min-width: @tablet-width) {
+    .heading(20px; 20px; @basic-black);
+    width: 283px;
+    margin-bottom: 0;
+    margin-left: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 190px;
+  }
 }

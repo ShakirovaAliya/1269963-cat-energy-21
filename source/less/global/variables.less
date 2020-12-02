@@ -21,7 +21,7 @@
 @decor-font: "Oswald", @base-font;
 
 // viewports //
-@mobile-width: 320px;
+@mobile-width-only: 767px;
 @tablet-width: 768px;
 @desktop-width: 1440px;
 
@@ -30,6 +30,16 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    padding: 0 110px;
+  }
 }
 
 .heading(@font-size; @line-height; @color) {
