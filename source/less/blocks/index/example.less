@@ -7,10 +7,18 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__heading {
   .wrapper;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__title {
@@ -22,7 +30,7 @@
   }
 }
 
-.example__desktop-wrapper {
+.example__container {
   @media (min-width: @desktop-width) {
     display: flex;
     background-color: @bg-grey;
