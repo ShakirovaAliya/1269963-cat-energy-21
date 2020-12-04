@@ -44,13 +44,10 @@
 }
 
 .example__wrapper {
+  .wrapper;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-  @media (min-width: @tablet-width) {
-    .wrapper;
-  }
 
   @media (min-width: @desktop-width) {
     width: 436px;
