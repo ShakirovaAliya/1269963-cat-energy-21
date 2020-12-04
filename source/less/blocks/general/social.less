@@ -7,6 +7,10 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social__item {
@@ -15,6 +19,10 @@
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
   }
 }
 
@@ -35,5 +43,22 @@
   &--facebook {
     width: 22px;
     height: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 12px;
+      height: 26px;
+    }
   }
 }

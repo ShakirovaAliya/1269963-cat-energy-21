@@ -1,12 +1,25 @@
 .slider {
-  .wrapper;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @bg-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+  }
 }
 
 .slider__list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.slider__item {
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .slider__item--after {
