@@ -7,17 +7,18 @@
 .address__wrapper {
   .wrapper;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    padding: 51px 71px;
+    padding: 62px 70px 51px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
     width: 570px;
+    margin-top: 95px;
     margin-left: 110px;
+    padding: 62px 76px 51px;
   }
 }
 
@@ -28,11 +29,11 @@
 
   @media (min-width: @tablet-width) {
     .heading(20px; 21px; @basic-black);
-    margin-right: 295px;
+    width: 171px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 87px;
+    width: 163px;
   }
 }
 
@@ -54,5 +55,9 @@
 
   @media (min-width: @tablet-width) {
     height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 184px;
   }
 }

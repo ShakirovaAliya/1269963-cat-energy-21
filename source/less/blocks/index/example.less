@@ -11,10 +11,6 @@
 
 .example__heading {
   .wrapper;
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
 }
 
 .example__title {
@@ -26,28 +22,41 @@
   }
 }
 
+.example__big-container {
+  background-color: @bg-grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-grey;
+  }
+}
+
 .example__container {
   @media (min-width: @desktop-width) {
+    .wrapper;
     display: flex;
-    background-color: @bg-grey;
-    padding-left: 110px;
+    justify-content: space-between;
     padding-right: 70px;
   }
 }
 
 .example__wrapper {
-  .wrapper;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    .wrapper;
+  }
+
   @media (min-width: @desktop-width) {
-    background-color: @bg-grey;
     width: 436px;
     margin: 0;
     padding: 0;
     padding-top: 70px;
-    margin-right: 134px;
     justify-content: flex-start;
   }
 }
@@ -64,7 +73,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @bg-grey;
     width: 436px;
   }
 }
