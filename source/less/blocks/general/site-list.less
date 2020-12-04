@@ -16,6 +16,10 @@
     padding-top: 69px;
     padding-right: 110px;
     padding-left: 132px;
+
+    &--casual {
+      padding-top: 0;
+    }
   }
 }
 
@@ -40,5 +44,11 @@
 
   @media (min-width: @desktop-width) {
     color: @basic-white;
+  }
+}
+
+.site-list__item-casual a {
+  @media (min-width: @desktop-width) {
+    color: @black-text;
   }
 }
