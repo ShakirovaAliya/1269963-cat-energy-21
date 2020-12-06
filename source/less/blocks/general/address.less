@@ -23,12 +23,12 @@
 }
 
 .address__text {
-  .heading(16px; 18px; @basic-black);
-  .uppercase-text;
+  .heading(16px; 18px);
+  .uppercase-text(@black-text);
   width: 140px;
 
   @media (min-width: @tablet-width) {
-    .heading(20px; 21px; @basic-black);
+    .heading(20px; 21px);
     width: 171px;
   }
 
@@ -38,11 +38,11 @@
 }
 
 .address__info {
-  .description(14px; 20px; @special-dark-grey);
+  font-size: 14px;
+  line-height: 20px;
   width: 140px;
 
   @media (min-width: @tablet-width) {
-    .description(16px; 20px; @special-dark-grey);
     width: 159px;
     text-align: right;
   }

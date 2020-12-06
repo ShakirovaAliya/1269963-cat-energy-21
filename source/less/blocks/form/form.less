@@ -26,13 +26,15 @@
 }
 
 .form__item {
-  .form-font;
+  .heading(16px; 18px);
+  .uppercase-text(@special-dark-grey);
   border: none;
   margin: 0;
   padding: 20px 0;
 
   @media (min-width: @tablet-width) {
-    .form-font(20px; 30px);
+    .heading(20px; auto);
+    color: @special-dark-grey;
 
     & .form__title {
       margin-bottom: 76px;
@@ -46,7 +48,7 @@
   @media (min-width: @desktop-width) {
     &--info,
     &--program {
-      width: 46.7%;
+      width: 568px;
       padding: 0;
     }
   }
@@ -57,16 +59,15 @@
 }
 
 .form__legend {
-  .heading(24px; 26px; @basic-black);
+  .heading(24px; 26px);
   text-transform: none;
 
   @media (min-width: @tablet-width) {
-    .heading(36px; 36px; @basic-black);
+    .heading(36px; 36px);
   }
 }
 
 .form__container {
-  text-transform: uppercase;
   width: 100%;
 
   @media (min-width: @desktop-width) {
@@ -79,7 +80,7 @@
     }
 
     &--contacts .form__point {
-      width: 46.7%;
+      width: 568px;
       margin-bottom: 0;
     }
   }
@@ -103,24 +104,17 @@
 }
 
 .form__field {
-  .form-font;
+  .heading(16px; 18px);
+  .uppercase-text(@special-dark-grey);
   border: 1px solid @grey-border-input;
   padding: 12px 16px 13px 16px;
   flex: 1;
   margin-left: 10px;
 
-  &::placeholder {
-    .form-font;
-    text-transform: uppercase;
-  }
-
   @media (min-width: @tablet-width) {
-    .form-font(20px; 30px);
+    .heading(20px; 30px);
+    color: @special-dark-grey;
     padding: 10px 16px;
-
-    &::placeholder {
-      .form-font(20px; 30px);
-    }
   }
 }
 
@@ -128,7 +122,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
 
   &--goal {
     color: @special-dark-text;
@@ -151,13 +144,19 @@
     }
 
     &--extra .form__option {
-      width: 50%;
+      width: 282px;
+      margin-right: 50px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
     &--extra .form__option {
-      width: 25%;
+      width: 305px;
+      margin-right: 0;
     }
   }
 }
@@ -170,7 +169,6 @@
   }
 
   & label {
-    .form-font;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -182,7 +180,6 @@
 }
 
 .form__radio {
-  .form-font;
   display: none;
 
   & + label {
@@ -222,24 +219,23 @@
   @media (min-width: @tablet-width) {
     & + label {
       padding-left: 60px;
-    }
 
-    & + label::before {
-      width: 40px;
-      height: 40px;
-    }
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
 
-    & + label::after {
-      width: 18px;
-      height: 18px;
-      left: 11px;
-      top: 0;
+      &::after {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+        top: 0;
+      }
     }
   }
 }
 
 .form__checkbox {
-  .form-font;
   display: none;
 
   & + label {
@@ -281,75 +277,66 @@
   @media (min-width: @tablet-width) {
     & + label {
       padding-left: 60px;
-    }
 
-    & + label::before {
-      width: 40px;
-      height: 40px;
-    }
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
 
-    & + label::after {
-      width: 10px;
-      height: 16px;
-      left: 15px;
-      top: -3px;
+      &::after {
+        width: 10px;
+        height: 16px;
+        left: 15px;
+        top: -3px;
+      }
     }
   }
 }
 
 .form__textarea {
-  .form-font;
-  color: @special-dark-grey;
+  .heading(16px; 18px);
+  .uppercase-text(@special-dark-grey);
   width: 100%;
   height: 150px;
   border: 1px solid @grey-border-input;
   padding: 13px 12px 0 15px;
-
-  &::placeholder {
-    .form-font;
-    text-transform: uppercase;
-  }
 }
 
 .form__footer {
   text-align: center;
+  line-height: 16px;
+  color: @basic-black;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 83%;
+    width: 523px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 68%;
+    width: 829px;
   }
 }
 
 .form__button {
   .button;
-  font-weight: 400;
-  width: 280px;
   border: none;
-  padding: 7px 44px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     width: 282px;
-    padding: 13px 45px;
+    font-size: 20px;
+    padding: 13px;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
-    padding: 13px 188px;
   }
 }
 
 .form__note {
-  .description(14px; 16px; @basic-black);
-
   @media (min-width: @tablet-width) {
-    .description(16px; 16px; @basic-black);
     padding-top: 13px;
   }
 }

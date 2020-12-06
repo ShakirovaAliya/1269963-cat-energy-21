@@ -27,22 +27,24 @@
 }
 
 .example-result__count {
-  .heading(24px; 24px; @basic-black);
-  .uppercase-text;
+  .heading(24px; 24px);
+  text-transform: uppercase;
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
-    .heading(30px; 37px; @basic-black);
+    .heading(30px; 37px);
   }
 }
 
 .example-result__text {
-  .description(12px; 12px; @special-dark-grey);
+  font-size: 12px;
+  line-height: 12px;
   background-color: @bg-grey;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    .description(14px; 14px; @special-dark-grey);
+    font-size: 14px;
+    line-height: 14px;
     background-color: @basic-white;
   }
 
@@ -52,12 +54,12 @@
 }
 
 .example-result__costs {
-  .heading(14px; 20px; @basic-black);
+  .heading(14px; 20px);
   text-transform: uppercase;
   margin: 0 auto 42px;
 
   @media (min-width: @tablet-width) {
-    .heading(20px; 20px; @basic-black);
+    .heading(20px; 20px);
     width: 174px;
     text-align: right;
     margin-right: 0;
