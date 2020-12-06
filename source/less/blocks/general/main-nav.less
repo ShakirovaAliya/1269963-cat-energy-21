@@ -1,26 +1,25 @@
 .main-nav {
-  padding: 0;
-  font-family: @decor-font;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  color: @basic-black;
+  .heading(20px; 20px);
   text-transform: uppercase;
+  font-weight: 500;
   text-align: center;
+  padding: 0;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
+    .heading(18px; 24px);
     font-weight: 400;
     width: 440px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: auto;
+    .heading(20px; auto);
     background-color: @green;
     width: 50%;
+
+    &--casual {
+      background-color: @basic-white;
+    }
   }
 }
 

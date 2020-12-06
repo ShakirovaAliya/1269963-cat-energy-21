@@ -43,61 +43,29 @@
   }
 }
 
-.heading(@font-size; @line-height; @color) {
+.heading(@font-size; @line-height) {
   font-family: @decor-font;
   font-size: @font-size;
   line-height: @line-height;
-  color: @color;
+  color: @basic-black;
   font-weight: 400;
 }
 
-.description(@font-size; @line-height; @color) {
-  font-family: @base-font;
-  font-size: @font-size;
-  line-height: @line-height;
+.uppercase-text(@color) {
   color: @color;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 .button(@font-size: 16px) {
   display: block;
   font-family: @decor-font;
   font-size: @font-size;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: @basic-white;
   background-color: @green;
-  width: 62px;
-  padding: 10px 109px;
-}
-
-.uppercase-text(@color: @basic-black) {
-  font-family: @decor-font;
-  color: @color;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.product-name(@line-height: 20px;) {
-  font-family: @decor-font;
-  font-size: 16px;
-  line-height: @line-height;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: @special-dark-text;
-}
-
-.product-info(@font-size; @line-height) {
-  font-family: @base-font;
-  font-size: @font-size;
-  line-height: @line-height;
-  color: @special-dark-grey;
-}
-
-.form-font() {
-  font-family: @decor-font;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  width: 280px;
+  padding: 10px;
 }
