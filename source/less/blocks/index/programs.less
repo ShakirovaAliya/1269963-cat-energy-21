@@ -138,6 +138,11 @@
   display: block;
   position: relative;
 
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+
   &::before {
     position: absolute;
     content: "";
