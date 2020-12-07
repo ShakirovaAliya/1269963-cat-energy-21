@@ -1,5 +1,5 @@
 .slider {
-  padding-bottom: 21px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     background-color: @bg-grey;
@@ -19,13 +19,12 @@
 }
 
 .slider__item {
-  @media (min-width: @tablet-width) {
-    text-align: center;
-  }
-}
-
-.slider__item--after {
   display: none;
+  text-align: center;
+
+  &--current {
+    display: block;
+  }
 }
 
 .slider__photo {
@@ -45,18 +44,98 @@
   }
 }
 
-.slider__toggles-wrapper {
-  width: 228px;
+.slider__range {
+  width: 210px;
   height: 40px;
-  background-color: @red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 604px;
+    width: 590px;
     height: 34px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 600px;
     margin-left: 100px;
+  }
+}
+
+.slider__button {
+  .heading(16px; 20px);
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    .heading(20px; auto);
+    text-decoration: underline dotted;
+    padding: 4px 8px;
+  }
+}
+
+.slider__controls {
+  position: relative;
+  width: 84px;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+  }
+}
+
+.slider__scale {
+  height: 18px;
+  background-color: @basic-white;
+  border: 2px solid @special-grey;
+  border-radius: 10px;
+
+  @media (min-width: @tablet-width) {
+    height: 6px;
+    background-color: @grey-bar;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.slider__bar {
+  width: 35px;
+  height: 6px;
+  margin: 4px;
+  background-color: @green;
+  border-radius: 5px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -15px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid @special-grey;
+    border-radius: 50%;
+    background-color: @basic-white;
+    box-shadow: 0 1px 1px 0 @special-grey;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: @green;
+      border-radius: 50%;
+      left: 12px;
+      top: 13px;
+    }
   }
 }

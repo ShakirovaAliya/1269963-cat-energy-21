@@ -18,7 +18,7 @@
         </a>
         <a class="page-header__title"></a>
       </div>
-      <nav class="main-nav main-nav--index">
+      <nav class="main-nav main-nav--index main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list site-list--index">
           <li class="site-list__item">
@@ -132,7 +132,15 @@
                     height="232" alt="Фото после">
                 </li>
               </ul>
-              <div class="slider__toggles-wrapper">
+              <div class="slider__range">
+                <button class="slider__button slider__button--active">Было</button>
+                <div class="slider__controls">
+                  <div class="slider__scale">
+                    <div class="slider__bar"></div>
+                  </div>
+                  <div class="slider__toggle" tabindex="0"></div>
+                </div>
+                <button class="slider__button">Стало</button>
               </div>
             </div>
           </div>
@@ -189,7 +197,22 @@
     </div>
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
-
