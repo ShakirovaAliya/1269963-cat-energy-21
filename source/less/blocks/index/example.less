@@ -2,10 +2,16 @@
   background-color: @bg-grey;
 
   @media (min-width: @tablet-width) {
+    border-top: 1px solid @grey-border;
+    padding-top: 15px;
     background-color: @basic-white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
   }
 }
 
