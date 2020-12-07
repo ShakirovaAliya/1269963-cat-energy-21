@@ -16,9 +16,17 @@
 .example__title {
   .heading(36px; 40px);
   padding-top: 27px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    margin-bottom: 75px;
   }
 }
 
@@ -53,7 +61,7 @@
     width: 436px;
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 55px;
     justify-content: flex-start;
   }
 }
@@ -64,10 +72,11 @@
 
   @media (min-width: @tablet-width) {
     width: 700px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    margin-bottom: 70px;
   }
 }

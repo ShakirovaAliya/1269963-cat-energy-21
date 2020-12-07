@@ -1,12 +1,14 @@
 .slider {
-  padding-bottom: 25px;
+  padding-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     background-color: @bg-grey;
+    padding-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
     width: 690px;
+    padding-bottom: 70px;
   }
 }
 
@@ -28,4 +30,33 @@
 
 .slider__photo {
   margin-bottom: 23px;
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 560px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 322px;
+    margin-bottom: 30px;
+  }
+}
+
+.slider__toggles-wrapper {
+  width: 228px;
+  height: 40px;
+  background-color: @red;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 604px;
+    height: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+  }
 }

@@ -1,7 +1,7 @@
 .example-result {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
@@ -12,8 +12,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   width: 124px;
-  margin-right: 30px;
+  margin-right: 31px;
   margin-bottom: 25px;
 
   &:nth-child(2) {
@@ -23,29 +24,55 @@
   @media (min-width: @tablet-width) {
     width: 162px;
     margin-right: 42px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 58px;
   }
 }
 
 .example-result__count {
   .heading(24px; 24px);
+  padding: 14px 41px 17px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
+  border: 1px solid @special-grey;
+  border-radius: 3px;
 
   @media (min-width: @tablet-width) {
     .heading(30px; 37px);
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+.example-result__item--duration .example-result__count {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 29px;
+    padding-right: 29px;
   }
 }
 
 .example-result__text {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
   background-color: @bg-grey;
-  padding: 0;
+  margin: 0;
+  width: 59px;
+  text-align: center;
+  top: 47px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 127px;
     background-color: @basic-white;
+    top: 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,21 +80,31 @@
   }
 }
 
-.example-result__costs {
+.example-result__cost {
   .heading(14px; 20px);
   text-transform: uppercase;
-  margin: 0 auto 42px;
+  margin: 8px auto 42px;
+  width: 188px;
+  display: flex;
+
+  & p {
+    margin: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    .heading(20px; 20px);
+    .heading(20px; 27px);
     width: 174px;
     text-align: right;
     margin-right: 0;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
-    width: 327px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 324px;
     text-align: left;
-    margin-left: 0;
+    margin: 0;
   }
 }

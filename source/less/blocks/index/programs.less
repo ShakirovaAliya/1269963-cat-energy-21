@@ -1,20 +1,28 @@
+.programs {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
 .programs__button {
   .button(14px);
   line-height: 18px;
-  padding: 7px 44px;
   width: 280px;
-  margin: 0 auto 29px;
+  padding-bottom: 12px;
+  margin: 0 auto 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     width: 244px;
-    padding: 14px 26px;
+    padding: 18px 26px;
     margin-left: 112px;
+    margin-bottom: 526px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 267px;
+    margin-bottom: 273px;
     margin-left: 190px;
+    padding: 14px 26px 16px;
   }
 }
 
@@ -41,16 +49,16 @@
 
 .programs__card {
   background-color: @basic-grey;
-  padding: 25px 0 20px 20px;
+  padding: 35px 0 20px 20px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 81px 279px 53px 52px;
+    padding: 77px 279px 63px 52px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 65px 52px;
   }
 }
 
@@ -58,17 +66,17 @@
   .heading(24px; 27px);
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 20px;
-  padding-left: 70px;
+  margin-bottom: 35px;
+  padding-left: 72px;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
     width: 50px;
-    height: 53px;
-    left: 0;
-    top: -10px;
+    height: 50px;
+    left: 2px;
+    top: -11px;
     background-color: @green;
     border-radius: 50%;
   }
@@ -81,36 +89,46 @@
     &::before {
       width: 200px;
       height: 200px;
-      left: 400px;
-      top: -10px;
+      left: 394px;
+      top: 13px;
     }
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
 
     &::before {
       width: 100px;
       height: 100px;
       left: 0;
-      top: -37px;
+      top: -30px;
     }
   }
 }
 
 .programs__description {
   padding-right: 33px;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 
+  & br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
     padding-right: 0;
-    margin-bottom: 48px;
+
+    & br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 33px;
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -146,12 +164,12 @@
     font-size: 20px;
 
     &::before {
-      left: 130px;
+      left: 133px;
       top: 7px;
     }
 
     &::after {
-      left: 148px;
+      left: 151px;
       top: 3px;
     }
   }

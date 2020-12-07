@@ -14,11 +14,13 @@
 
   @media (min-width: @desktop-width) {
     .heading(20px; auto);
-    background-color: @green;
     width: 50%;
+  }
 
-    &--casual {
-      background-color: @basic-white;
+  &--index {
+    @media (min-width: @desktop-width) {
+      background-color: @green;
+      padding-top: 30px;
     }
   }
 }
