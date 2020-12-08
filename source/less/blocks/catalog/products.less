@@ -1,6 +1,7 @@
 .products__container {
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     .wrapper;
@@ -8,11 +9,13 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
+    margin-bottom: 75px;
   }
 }
 
@@ -40,12 +43,14 @@
 
 .products__item {
   margin: 0 auto;
+  border-top: 1px solid @grey-border;
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    padding: 30px 36px 40px;
-    margin: 0 60px 60px 0;
+    padding: 30px 36px 39px;
+    margin: 0 60px 140px 0;
     background-color: @basic-grey;
+    border: none;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -57,7 +62,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 80px 62px 0;
+    margin: 0 80px 142px 0;
     width: 245px;
     padding: 0 30 0 35px;
 
@@ -78,7 +83,7 @@
 
 .products__card {
   .wrapper;
-  padding: 19px 18px 0 20px;
+  padding: 19px 18px 24px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -102,16 +107,19 @@
   @media (min-width: @tablet-width) {
     width: 168px;
     height: 100px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
     width: 172px;
-    margin-bottom: 46px;
+    margin-bottom: 35px;
   }
 }
 
 .products__photo {
+  margin-left: 30px;
+  margin-top: 10px;
+
   @media (min-width: @tablet-width) {
     margin-left: 50px;
   }
@@ -144,18 +152,27 @@
     .heading(20px; 24px);
     width: 150px;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 21px;
+    margin: 0 auto 14px;
   }
 
   @media (min-width: @desktop-width) {
     .heading(20px; 21px);
+    margin-bottom: 20px;
   }
 }
 
 .products__info {
-  margin-bottom: 22px;
   width: 100%;
+  border-collapse: collapse;
+
+  & td {
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      line-height: 30px;
+      border-bottom: 1px solid @special-grey;
+    }
+  }
 }
 
 .products__value {
@@ -169,7 +186,7 @@
 .products__link {
   .button;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     width: 248px;

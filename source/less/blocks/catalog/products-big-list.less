@@ -1,55 +1,106 @@
 .products-big-list {
   .wrapper;
-  padding-top: 79px;
+  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
+
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    padding: 0 36px 40px;
     border: 2px solid @basic-grey;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    padding: 0 30px 40px 35px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-top: 103px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .products-big-list__text {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 78px;
+  position: relative;
+
+  & p {
+    margin-top: 0;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 40px;
+    left: 125px;
+    background-color: @grey-plus;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 40px;
-    margin-bottom: 87px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 59px;
+    height: 243px;
+    margin-bottom: 0;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: -20px;
+      left: 100px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 55px;
+    padding-bottom: 15px;
+
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: -25px;
+      left: 90px;
+    }
   }
+}
 
-  &--bold {
-    .heading(16px; 20px);
-    .uppercase-text(@black-text);
+.products-big-list__bold-text {
+  .heading(16px; 20px);
+  .uppercase-text(@black-text);
+  margin-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 
-    @media (min-width: @tablet-width) {
-      .heading(20px; 22px);
-      color: @black-text;
-      padding-top: 111px;
-      margin-bottom: 23px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 129px 10px 0;
-    }
+  @media (min-width: @tablet-width) {
+    .heading(20px; 22px);
+    color: @black-text;
+    margin-bottom: 24px;
   }
 }
 
@@ -58,10 +109,12 @@
   color: @special-dark-grey;
   background-color: @basic-grey;
   margin-bottom: 25px;
+  padding: 20px 10px;
 
   @media (min-width: @tablet-width) {
     width: 249px;
     margin: 0 auto;
+    padding: 10px;
   }
 
   @media (min-width: @desktop-width) {

@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__container page-header__container--casual">
+    <div class="page-header__container">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="33" height="37"
@@ -18,21 +18,21 @@
         </a>
         <a class="page-header__title" href="index.html"><b>Cat</b> energy</a>
       </div>
-      <nav class="main-nav main-nav--casual">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list site-list--casual">
-          <li class="site-list__item site-list__item--casual">
-            <a href="index.html">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--casual site-list__item--active">
-            <a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item site-list__item--casual">
-            <a href="form.html">
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
               Подбор программы
             </a>
           </li>
@@ -258,15 +258,17 @@
           </li>
         </ul>
         <div class="products-big-list">
-          <p class="products-big-list__text products-big-list__text--bold">Показать еще 100500 товаров</p>
-          <p class="products-big-list__text">На самом деле вкусов гораздо больше!</p>
+          <div class="products-big-list__text">
+            <p class="products-big-list__bold-text">Показать еще 100500 товаров</p>
+            <p>На самом деле вкусов гораздо больше!</p>
+          </div>
           <a class="products-big-list__link" href="products.html">Показать все</a>
         </div>
       </div>
     </section>
     <section class="extra-products">
+      <h2 class="extra-products__heading">Дополнительные товары</h2>
       <div class="extra-products__wrapper">
-        <h2 class="extra-products__heading">Дополнительные товары</h2>
         <div class="extra-products__big-container">
           <ul class="extra-products__list">
             <li class="extra-products__item">
@@ -274,7 +276,7 @@
                 <h3 class="extra-products__name">Сахарозаменитель</h3>
                 <table class="extra-products__info">
                   <tr>
-                    <td>1 упаковка (100 г)</td>
+                    <td class="extra-products__size">1 упаковка (100 г)</td>
                     <td class="extra-products__price">200 р.</td>
                   </tr>
                 </table>
@@ -319,7 +321,7 @@
             </li>
           </ul>
           <div class="extra-products__container">
-            <p class="extra-products__text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="extra-products__text">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -328,13 +330,18 @@
       <h2 class="visually-hidden">
         Адрес
       </h2>
-      <div class="address__wrapper">
-        <p class="address__text">
-          Приглашаем к сотрудничеству дилеров!
+      <div class="address__wrapper address__wrapper--grey-bg">
+        <p class="address__text address__text--grey-bg">
+          Приглашаем<br> к сотрудничеству дилеров!
         </p>
-        <p class="address__info">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div>
+          <p class="address__info address__info--steet">
+            ул. Большая Конюшенная, д. 19/8
+          </p>
+          <p class="address__info address__info--city">
+            Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="address__map">
 
@@ -368,6 +375,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="/js/menu.js"></script>
 
 </body>
 
