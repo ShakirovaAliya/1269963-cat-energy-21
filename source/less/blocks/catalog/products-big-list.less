@@ -1,5 +1,4 @@
 .products-big-list {
-  .wrapper;
   border-top: 1px solid @grey-border;
   border-bottom: 1px solid @grey-border;
 
@@ -11,12 +10,8 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    padding-top: 95px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,18 +20,20 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding-top: 103px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 97px;
   }
 }
 
 .products-big-list__text {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   padding-top: 78px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
   & p {
     margin-top: 0;
@@ -49,7 +46,6 @@
     width: 30px;
     height: 2px;
     top: 40px;
-    left: 125px;
     background-color: @grey-plus;
   }
 
@@ -60,32 +56,26 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 59px;
+    padding: 63px 50px 0 50px;
     height: 243px;
-    margin-bottom: 0;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: -15px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &::before,
     &::after {
       width: 60px;
       top: -20px;
-      left: 100px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 55px;
-    padding-bottom: 15px;
-
-
-    &::before,
-    &::after {
-      width: 60px;
-      top: -25px;
-      left: 90px;
     }
   }
 }
@@ -101,6 +91,8 @@
     .heading(20px; 22px);
     color: @black-text;
     margin-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -108,13 +100,11 @@
   .button;
   color: @special-dark-grey;
   background-color: @basic-grey;
-  margin-bottom: 25px;
-  padding: 20px 10px;
+  margin: 0 auto 24px;
 
   @media (min-width: @tablet-width) {
     width: 249px;
-    margin: 0 auto;
-    padding: 10px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {

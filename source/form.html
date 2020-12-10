@@ -47,7 +47,7 @@
       <div class="form__columns">
         <fieldset class="form__item form__item--info">
           <legend class="visually-hidden">Информация о питомце</legend>
-          <div class="form__container form__container--info">
+          <div class="form__container">
             <p class="form__point">
               <label for="catName">Имя:<sup>*</sup></label>
               <input class="form__field form__field--name" type="text" id="catName" placeholder="Барсик" required>
@@ -57,13 +57,13 @@
               <input class="form__field form__field--weight" type="number" id="catWeight" placeholder="7" required>
             </p>
             <p class="form__point">
-              <label for="catAge">Возраст (лет):</label>
+              <label class="form__label form__label--age" for="catAge">Возраст (лет):</label>
               <input class="form__field form__field--age" type="number" id="catAge" placeholder="7">
             </p>
           </div>
         </fieldset>
         <fieldset class="form__item form__item--program">
-          <div class="form__container form__container--goal">
+          <div class="form__container">
             <legend class="visually-hidden">Цель программы</legend>
             <ul class="form__list form__list--goal">
               <li class="form__option">
@@ -83,10 +83,10 @@
         </fieldset>
       </div>
       <fieldset class="form__item form__item--contacts">
-        <div class="form__title form__title--contacts">
-          <legend class="form__legend form__legend--contacts">Контактные данные<br> (владельца кота)</legend>
+        <div class="form__title">
+          <legend class="form__legend">Контактные данные (владельца кота)</legend>
         </div>
-        <div class="form__container form__container--contacts">
+        <div class="form__container">
           <p class="form__point form__point--contacts">
             <label for="contactMail">E-mail:<sup>*</sup></label>
             <input class="form__field form__field--mail" type="email" id="contactMail" placeholder="kuklachev@gmail.com" required>
@@ -98,7 +98,7 @@
         </div>
       </fieldset>
       <fieldset class="form__item form__item--comment">
-        <div class="form__title form__title--comment">
+        <div class="form__title">
           <label class="form__legend" for="comment">Комментарий</label>
         </div>
         <div class="form__container">
@@ -106,8 +106,8 @@
         </div>
       </fieldset>
       <fieldset class="form__item form__item--add">
-        <div class="form__title form__title--add">
-          <legend class="form__legend form__legend--extra">Дополнительно</legend>
+        <div class="form__title">
+          <legend class="form__legend">Дополнительно</legend>
         </div>
         <div class="form__container">
           <ul class="form__list form__list--extra">
@@ -141,7 +141,7 @@
       </h2>
       <div class="address__wrapper address__wrapper--grey-bg address__wrapper--form">
         <p class="address__text address__text--grey-bg">
-          Приглашаем<br> к сотрудничеству дилеров!
+          Приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <div>
           <p class="address__info address__info--steet">
@@ -185,7 +185,7 @@
     </div>
   </footer>
 
-  <script src="/js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
   </html>
