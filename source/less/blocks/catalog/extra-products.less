@@ -18,7 +18,7 @@
   overflow: hidden;
   margin-bottom: 33px;
 
-  & div {
+  & .extra-products__line {
     .wrapper;
 
     & > span {
@@ -33,9 +33,9 @@
 
   @media (min-width: @tablet-width) {
     .heading(36px; 40px);
-    margin-bottom: 75px;
+    margin-bottom: 76px;
 
-    & div {
+    & .extra-products__line {
       & > span {
         padding: 0 37px;
       }
@@ -50,9 +50,11 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 77px;
 
-    & div {
+    & .extra-products__line {
+      padding-left: 70px;
+
       & > span {
-        padding: 0 35px 0 0;
+        padding: 0 40px;
       }
     }
 
