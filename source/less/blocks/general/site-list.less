@@ -13,13 +13,17 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 60px;
     padding-right: 110px;
     padding-left: 132px;
     justify-content: space-between;
     width: 100%;
 
-    &--index .site-list__link {
-      @media (min-width: @desktop-width) {
+    &--index {
+      padding-top: 55px;
+
+      & .site-list__link {
+        padding-top: 0;
         color: @basic-white;
 
         &--active {
@@ -39,10 +43,6 @@
 
     &:last-child {
       margin-right: 0;
-    }
-
-    &--active {
-      border-bottom: 2px solid @green;
     }
   }
 
@@ -67,6 +67,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 0 8px;
+
+    &--active {
+      border-bottom: 2px solid @green;
+    }
   }
 
   @media (min-width: @desktop-width) {

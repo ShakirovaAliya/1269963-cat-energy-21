@@ -15,8 +15,18 @@
   align-items: center;
   padding: 10px 19px;
 
+  &--grey-bg {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 50px 70px 43px;
+    padding: 45px 70px 43px;
+
+    &--grey-bg {
+      padding-top: 51px;
+      padding-bottom: 56px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -25,10 +35,13 @@
     top: 95px;
     left: 110px;
     padding: 45px 76px 51px;
-    color: red;
     opacity: 1;
     background-color: @basic-white;
     justify-content: flex-start;
+
+    &--grey-bg {
+      padding: 50px 76px 51px;
+    }
   }
 }
 
@@ -36,6 +49,14 @@
   .heading(16px; 21px);
   .uppercase-text(@black-text);
   width: 140px;
+
+  &--grey-bg {
+    margin-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     .heading(20px; 23px);
