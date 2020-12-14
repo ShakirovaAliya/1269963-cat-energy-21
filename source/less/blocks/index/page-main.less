@@ -1,39 +1,69 @@
 .page-main__heading {
-  background-color: @green;
-  padding: 27px 0;
-  padding-bottom: 270px;
-  margin-bottom: 3px;
   text-align: center;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 437px;
+  margin-bottom: 3px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: 49px;
+    height: 245px;
+    background-image: none;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 53px;
+    position: absolute;
+    top: 195px;
+    background-color: transparent;
+  }
+}
+
+.page-main__heading-bg {
+  height: 302px;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    .wrapper;
+    background-color: @basic-white;
+    z-index: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    width: 920px;
+    margin-left: 190px;
   }
 }
 
 .page-main__title {
   .heading(36px; 36px);
+  padding-top: 27px;
   color: @basic-white;
   width: 249px;
   margin: 0 auto 25px;
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
+    margin: 0 0 41px 87px;
     width: 414px;
-    margin-bottom: 41px;
-    margin-left: 117px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     margin-bottom: 40px;
-    margin-left: 190px;
-    margin-right: 0;
   }
 }
 
@@ -47,12 +77,26 @@
   @media (min-width: @tablet-width) {
     .heading(20px; 20px);
     width: 283px;
-    margin-bottom: 0;
-    margin-left: 117px;
+    margin: 0 0 20px 87px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 190px;
-    margin-right: 0;
+    margin: 0;
+  }
+}
+
+
+.page-main__image {
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552;
+    height: 499px;
+    margin-left: -35px;
+    margin-top: -55px;
   }
 }

@@ -3,7 +3,11 @@
   margin-bottom: 46px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 37px;
   }
 }
 
@@ -13,7 +17,8 @@
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
-    margin-bottom: 11px;
+    margin-bottom: 12px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,10 +48,6 @@
   padding-left: 80px;
   margin-bottom: 26px;
 
-  & br {
-    display: none;
-  }
-
   &::before {
     position: absolute;
     content: "";
@@ -55,33 +56,84 @@
     background-color: @green;
     left: 0;
     top: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--beneficial {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/icon-tub.svg");
+    }
+  }
+
+  &--replacement {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  &--changes {
+    &::before {
+      background-image: url("../img/icon-alarm.svg");
+    }
   }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    padding-top: 170px;
-    padding-left: 0;
-    margin-right: 139px;
-    margin-bottom: 75px;
     flex: 1;
-
-    & br {
-      display: block;
-    }
-
-    &:nth-child(2) {
-      margin-right: 85px;
-    }
-
-    &:nth-child(4) {
-      margin-right: 75px;
-    }
+    padding: 172px 0 70px;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
 
     &::before {
       width: 80px;
       height: 80px;
       left: 0;
       top: 60px;
+    }
+
+    &--beneficial {
+      background-image: url("../img/one.svg");
+      background-position: 78% 70%;
+      width: 230px;
+      margin-right: 150px;
+    }
+
+    &--powder {
+      background-image: url("../img/two.svg");
+      background-position: 100% 70%;
+      width: 246px;
+      margin-right: 90px;
+    }
+
+    &--replacement {
+      background-image: url("../img/three.svg");
+      background-position: 88% 73%;
+      padding-top: 175px;
+      width: 247px;
+      margin-right: 130px;
+
+      &::before {
+        top: 62px;
+      }
+    }
+
+    &--changes {
+      background-image: url("../img/four.svg");
+      background-position: 95% 70%;
+      padding-top: 174px;
+      width: 249px;
+      margin-right: 70px;
+
+      &::before {
+        top: 61px;
+      }
     }
   }
 
@@ -92,6 +144,22 @@
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &--beneficial {
+      background-position: 70% 70%;
+    }
+
+    &--powder {
+      background-position: 90% 70%;
+    }
+
+    &--replacement {
+      background-position: 95% 73%;
+    }
+
+    &--changes {
+      background-position: 100% 70%;
     }
   }
 }

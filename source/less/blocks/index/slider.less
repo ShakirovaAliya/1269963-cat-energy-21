@@ -1,9 +1,10 @@
 .slider {
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     background-color: @bg-grey;
-    padding-bottom: 66px;
+    padding-bottom: 68px;
+    height: 462px;
   }
 
   @media (min-width: @desktop-width) {
@@ -12,10 +13,31 @@
   }
 }
 
+.slider__wrapper {
+  @media (min-width: @tablet-width) {
+    .wrapper;
+    position: relative;
+    height: 462px;
+  }
+}
+
 .slider__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: -185px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -205px;
+    left: 27px;
+  }
 }
 
 .slider__item {
@@ -25,22 +47,24 @@
   &--current {
     display: block;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 354px;
+    height: 607px;
+    display: block;
+  }
 }
 
 .slider__photo {
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   width: 311px;
   height: 232px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
-    height: 560px;
+    width: 354px;
+    height: 607px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 322px;
-    margin-bottom: 35px;
+    margin-left: 0;
   }
 }
 
@@ -55,10 +79,13 @@
   @media (min-width: @tablet-width) {
     width: 570px;
     height: 34px;
+    position: absolute;
+    left: 100px;
+    top: 361px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 100px;
+    margin-left: 20px;
     width: 585px;
   }
 }
