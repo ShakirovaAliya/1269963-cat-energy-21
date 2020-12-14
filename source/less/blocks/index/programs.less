@@ -4,7 +4,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 }
 
@@ -21,7 +21,7 @@
     padding: 18px 26px;
     position: absolute;
     top: 370px;
-    left: 119px;
+    left: 113px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,7 +59,7 @@
 
 .programs__card {
   background-color: @basic-grey;
-  padding: 35px 0 20px 20px;
+  padding: 35px 0 22px 20px;
   margin-bottom: 20px;
 
   &--slim {
@@ -85,7 +85,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 78px 279px 63px 52px;
+    padding: 78px 279px 65px 52px;
     margin-bottom: 30px;
 
     &--slim {
@@ -118,7 +118,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 51px 67px 52px;
+    padding: 77px 51px 65px 52px;
 
     &--slim {
       & .programs__title {
@@ -199,17 +199,14 @@
 
 .programs__description {
   padding-right: 33px;
-  margin-bottom: 20px;
-  padding-bottom: 21px;
-  border-bottom: 1px solid @grey-line;
+  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
-    border: none;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 15px;
   }
 }
 
@@ -218,6 +215,9 @@
   text-transform: uppercase;
   display: block;
   position: relative;
+  border-top: 1px solid @grey-line;
+  width: 240px;
+  padding-top: 19px;
 
   &:active,
   &:focus {
@@ -230,7 +230,7 @@
     width: 18px;
     height: 2px;
     left: 100px;
-    top: 7px;
+    top: 26px;
     background-color: @basic-black;
   }
 
@@ -240,7 +240,7 @@
     width: 0;
     height: 0;
     left: 118px;
-    top: 3px;
+    top: 22px;
     background-color: transparent;
     border: 5px solid transparent;
     border-left: 5px solid @basic-black;
@@ -248,15 +248,28 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    border: none;
 
     &::before {
       left: 135px;
-      top: 7px;
+      top: 28px;
     }
 
     &::after {
       left: 149px;
-      top: 3px;
+      top: 24px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: 135px;
+      top: 25px;
+    }
+
+    &::after {
+      left: 149px;
+      top: 21px;
     }
   }
 }
