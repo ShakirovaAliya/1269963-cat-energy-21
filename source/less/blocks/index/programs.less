@@ -1,33 +1,12 @@
 .programs {
   @media (min-width: @tablet-width) {
+    margin-top: -615px;
     margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 40px;
-  }
-}
-
-.programs__button {
-  .button(14px);
-  line-height: 18px;
-  width: 280px;
-  padding-bottom: 12px;
-  margin: 0 auto 22px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    width: 244px;
-    padding: 18px 26px;
-    position: absolute;
-    top: 370px;
-    left: 113px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 14px 26px 16px;
-    top: 458px;
-    left: 190px;
+    margin-top: 0;
   }
 }
 
@@ -65,7 +44,7 @@
   &--slim {
     & .programs__title {
       &::before {
-        background-image: url("../img/cat-slim-mobile.svg");
+        background-image: url("../img/cat-slim.svg");
         top: -14px;
       }
     }
@@ -76,7 +55,7 @@
       padding-left: 70px;
 
       &::before {
-        background-image: url("../img/cat-pro-mobile.svg");
+        background-image: url("../img/cat-pro.svg");
         width: 67px;
         height: 50px;
         left: -7px;
@@ -85,14 +64,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 78px 279px 65px 52px;
+    padding: 78px 279px 64px 52px;
     margin-bottom: 30px;
 
     &--slim {
       & .programs__title {
         &::before {
-          background-image: url("../img/cat-slim-tablet.svg");
-          top: 5px;
+          top: 3px;
+          left: 394px;
+          background-size: cover;
         }
       }
 
@@ -107,11 +87,11 @@
         margin-bottom: 24px;
 
         &::before {
-          background-image: url("../img/cat-pro-tablet.svg");
           width: 268px;
           height: 200px;
           left: 360px;
           top: 13px;
+          background-size: cover;
         }
       }
     }
@@ -123,7 +103,8 @@
     &--slim {
       & .programs__title {
         &::before {
-          background-image: url("../img/cat-slim-desktop.svg");
+          width: 100px;
+          height: 106px;
           left: 0;
           top: -35px;
         }
@@ -140,7 +121,6 @@
         padding-left: 162px;
 
         &::before {
-          background-image: url("../img/cat-pro-desktop.svg");
           width: 134px;
           height: 100px;
           left: -20px;
@@ -181,7 +161,7 @@
 
     &::before {
       width: 200px;
-      height: 211px;
+      height: 212px;
       left: 392px;
     }
   }
@@ -229,7 +209,7 @@
     content: "";
     width: 18px;
     height: 2px;
-    left: 100px;
+    left: 101px;
     top: 26px;
     background-color: @basic-black;
   }
@@ -251,13 +231,14 @@
     border: none;
 
     &::before {
-      left: 135px;
-      top: 28px;
+      width: 20px;
+      left: 133px;
+      top: 26px;
     }
 
     &::after {
-      left: 149px;
-      top: 24px;
+      left: 150px;
+      top: 22px;
     }
   }
 

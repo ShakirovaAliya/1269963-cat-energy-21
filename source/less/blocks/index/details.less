@@ -1,13 +1,14 @@
 .details__wrapper {
   .wrapper;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 37px;
+    margin-bottom: 52px;
+    padding-right: 106px;
   }
 }
 
@@ -18,7 +19,7 @@
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
-    margin-bottom: 12px;
+    margin-bottom: 58px;
     margin-top: 0;
   }
 
@@ -35,132 +36,125 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
   }
 }
 
 .details__item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding-left: 80px;
   margin-bottom: 26px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: @green;
-    left: 0;
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  & p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: @green;
+      left: 0;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
-  &--beneficial {
+  &--beneficial p {
     &::before {
       background-image: url("../img/icon-leaf.svg");
     }
   }
 
-  &--powder {
+  &--powder p {
     &::before {
       background-image: url("../img/icon-tub.svg");
     }
   }
 
-  &--replacement {
+  &--replacement p {
     &::before {
       background-image: url("../img/icon-eat.svg");
     }
   }
 
-  &--changes {
+  &--changes p {
     &::before {
       background-image: url("../img/icon-alarm.svg");
     }
   }
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
-    flex: 1;
-    padding: 172px 0 70px;
     margin-bottom: 0;
-    background-repeat: no-repeat;
 
-    &::before {
-      width: 80px;
-      height: 80px;
-      left: 0;
-      top: 60px;
+    & p {
+      z-index: 3;
+      padding-top: 110px;
+      padding-left: 0;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: 0;
+      }
     }
 
     &--beneficial {
-      background-image: url("../img/one.svg");
-      background-position: 78% 70%;
       width: 230px;
-      margin-right: 150px;
+      margin-right: 153px;
+      margin-bottom: 60px;
     }
 
     &--powder {
-      background-image: url("../img/two.svg");
-      background-position: 100% 70%;
       width: 246px;
-      margin-right: 90px;
     }
 
     &--replacement {
-      background-image: url("../img/three.svg");
-      background-position: 88% 73%;
-      padding-top: 175px;
       width: 247px;
-      margin-right: 130px;
-
-      &::before {
-        top: 62px;
-      }
+      margin-right: 137px;
     }
 
     &--changes {
-      background-image: url("../img/four.svg");
-      background-position: 95% 70%;
-      padding-top: 174px;
       width: 249px;
-      margin-right: 70px;
-
-      &::before {
-        top: 61px;
-      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 173px;
-    margin-right: 77px;
-    flex: 1;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-
     &--beneficial {
-      background-position: 70% 70%;
+      margin-right: 94px;
+      margin-bottom: 0;
     }
 
     &--powder {
-      background-position: 90% 70%;
+      margin-right: 79px;
     }
 
     &--replacement {
-      background-position: 95% 73%;
+      margin-right: 77px;
     }
+  }
+}
 
-    &--changes {
-      background-position: 100% 70%;
+
+.details__number {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    .heading(280px; 280px);
+    color: @basic-grey;
+    display: block;
+    z-index: -2;
+    margin-top: -238px;
+    margin-left: 113px;
+
+    &--first {
+      margin-left: 118px;
     }
   }
 }
