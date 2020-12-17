@@ -5,21 +5,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  width: 286px;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    background-color: @grey-icon;
+  &:hover {
+    & path {
+      fill: @green;
+    }
   }
 
   &:active {
     opacity: 0.3;
   }
 
+  & svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  & path {
+    fill: @grey-icon;
+  }
+
   @media (min-width: @tablet-width) {
-    width: 163px;
+    margin-top: -3px;
+    width: 165px;
   }
 }

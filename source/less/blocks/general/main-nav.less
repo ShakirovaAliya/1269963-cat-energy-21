@@ -30,7 +30,7 @@
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 0;
     width: 24px;
     height: 2px;
@@ -72,14 +72,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    .heading(20px; auto);
+    .heading(20px; 20px);
     width: 50%;
   }
 
   &--index {
     @media (min-width: @desktop-width) {
-      background-color: @green;
-      padding-top: 40px;
+      background-image: url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
     }
   }
 }
@@ -91,7 +93,7 @@
   border: none;
   width: 24px;
   height: 20px;
-  top: -44px;
+  top: -43px;
   right: 20px;
   background-color: transparent;
   cursor: pointer;
