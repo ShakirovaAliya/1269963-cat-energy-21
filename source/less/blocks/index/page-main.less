@@ -25,11 +25,21 @@
   }
 }
 
-.page-main__heading-background-color {
-  background-color: rgba(104, 183, 56, 0.85);
+.page-main__heading-background-img {
+  background-color: @special-dark-grey;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: contain;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
+    background-image: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,26 +47,19 @@
   }
 }
 
-.page-main__heading-background-img {
-  background-image: url("../img/rectangle-background.png"), url("../img/index-background-mobile.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, contain;
-  background-position: 100% 100%, 50% 50%;
+.page-main__heading-background-color {
+  background-color: rgba(104, 183, 56, 0.85);
   padding-top: 27px;
   padding-bottom: 164px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/rectangle-background@2x.png"), url("../img/index-background-mobile@2x.jpg");
-    background-size: cover, contain;
-  }
-
   @media (min-width: @tablet-width) {
-    background-image: none;
+    background-color: @basic-white;
     padding-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 25px;
+    background-color: transparent;
   }
 }
 

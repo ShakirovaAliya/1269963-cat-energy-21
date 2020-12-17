@@ -49,8 +49,8 @@
   </header>
   <main class="page-main">
     <div class="page-main__heading">
-      <div class="page-main__heading-background-color">
-        <div class="page-main__heading-background-img">
+      <div class="page-main__heading-background-img">
+        <div class="page-main__heading-background-color">
           <div class="page-main__container">
             <h1 class="page-main__title">Функциональное питание для котов</h1>
             <p class="page-main__slogan">Занялся собой? Займись котом!</p>
@@ -98,20 +98,16 @@
         </h2>
         <ul class="details__list">
           <li class="details__item details__item--beneficial">
-            <p>Функциональное питание содержит только полезные питательные вещества.</p>
-            <span class="details__number details__number--first">1</span>
+            Функциональное питание содержит только полезные питательные вещества.
           </li>
           <li class="details__item details__item--powder">
-            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            <span class="details__number details__number--second">2</span>
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
           <li class="details__item details__item--replacement">
-            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
-            <span class="details__number details__number--third">3</span>
+            Замените один-два приема обычной еды на наше функциональное питание.
           </li>
           <li class="details__item details__item--changes">
-            <p>Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!</p>
-            <span class="details__number details__number--fourth">4</span>
+            Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!
           </li>
         </ul>
       </div>
@@ -148,10 +144,16 @@
             <div class="slider__wrapper">
               <ul class="slider__list">
                 <li class="slider__item slider__item--before slider__item--current">
-                  <img class="slider__photo slider__photo--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото до">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
+                    <img class="slider__photo slider__photo--before" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="311" height="232" alt="Фото до">
+                  </picture>
                 </li>
                 <li class="slider__item slider__item--after">
-                  <img class="slider__photo slider__photo--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Фото после">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
+                    <img class="slider__photo slider__photo--after" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="251" height="240" alt="Фото после">
+                  </picture>
                 </li>
               </ul>
               <div class="slider__range">
