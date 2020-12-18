@@ -32,6 +32,19 @@
 .social__link {
   display: block;
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte:hover path,
+  &--instagram:hover path {
+    fill: @green;
+  }
+
+  &--facebook:hover path {
+    stroke: @green;
+  }
+
   @media (min-width: @tablet-width) {
     &--vkontakte svg {
       width: 30px;
