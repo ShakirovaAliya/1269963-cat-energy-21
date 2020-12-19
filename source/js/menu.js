@@ -21,19 +21,22 @@ var firstSlide = document.querySelector(".slider__item--before");
 var secondSlide = document.querySelector(".slider__item--after");
 var sliderBar = document.querySelector(".slider__bar");
 var sliderToggle = document.querySelector(".slider__toggle");
+var slider = document.querySelector(".slider");
 
-buttonAfter.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  firstSlide.classList.remove("slider__item--current");
-  secondSlide.classList.add("slider__item--current");
-  sliderBar.style.margin = "3px 4px 0 43px";
-  sliderToggle.style.left = "95%";
-})
+if(slider) {
+  buttonAfter.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    firstSlide.classList.remove("slider__item--current");
+    secondSlide.classList.add("slider__item--current");
+    sliderBar.style.margin = "3px 4px 0 43px";
+    sliderToggle.style.left = "95%";
+  })
 
-buttonBefore.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  secondSlide.classList.remove("slider__item--current");
-  firstSlide.classList.add("slider__item--current");
-  sliderBar.style.margin = "3px 43px 0 4px";
-  sliderToggle.style.left = "0%";
-})
+  buttonBefore.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    secondSlide.classList.remove("slider__item--current");
+    firstSlide.classList.add("slider__item--current");
+    sliderBar.style.margin = "3px 43px 0 4px";
+    sliderToggle.style.left = "0%";
+  })
+}
