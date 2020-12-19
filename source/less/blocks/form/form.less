@@ -315,6 +315,10 @@
     border: 2px solid @special-dark-grey;
   }
 
+  &--tel path {
+    fill: @basic-black;
+  }
+
   &--tel,
   &--mail {
     border-color: @special-grey;
@@ -346,7 +350,11 @@
   right: 14px;
   top: 15px;
   cursor: pointer;
-  stroke: @basic-black;
+
+  &--envelope {
+    fill: none;
+    stroke: @basic-black;
+  }
 
   @media (min-width: @tablet-width) {
     right: 16px;
