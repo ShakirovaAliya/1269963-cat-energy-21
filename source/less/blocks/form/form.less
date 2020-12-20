@@ -291,6 +291,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+
+  &:focus-within path,
+  &:focus-within line {
+    stroke: @green;
+  }
 }
 
 .form__field {
@@ -300,6 +306,27 @@
   padding: 13px 16px 13px 14px;
   flex: 1;
   margin-left: 11px;
+
+  &:hover {
+    border-color: @special-grey;
+  }
+
+  &:focus {
+    border: 2px solid @special-dark-grey;
+  }
+
+  &--tel path {
+    fill: @basic-black;
+  }
+
+  &--tel,
+  &--mail {
+    border-color: @special-grey;
+  }
+
+  &--tel:disabled {
+    border: 2px solid @special-dark-grey;
+  }
 
   @media (min-width: @tablet-width) {
     .heading(20px; 30px);
@@ -314,6 +341,26 @@
 
     &--tel {
       padding: 10px 18px;
+    }
+  }
+}
+
+.form__icon {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  cursor: pointer;
+
+  &--envelope {
+    fill: none;
+    stroke: @basic-black;
+  }
+
+  @media (min-width: @tablet-width) {
+    right: 16px;
+
+    &--envelope {
+      top: 18px;
     }
   }
 }
@@ -413,6 +460,14 @@
     border-radius: 50%;
   }
 
+  &:hover + label::before {
+    border-color: @hover-grey-border;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
+
   & + label::after {
     display: none;
     position: absolute;
@@ -466,6 +521,14 @@
     left: 0;
     width: 30px;
     height: 30px;
+  }
+
+  &:hover + label::before {
+    border-color: @hover-grey-border;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
   }
 
   & + label::after {
