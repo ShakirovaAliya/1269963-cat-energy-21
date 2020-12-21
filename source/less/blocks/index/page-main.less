@@ -25,36 +25,40 @@
   }
 }
 
-.page-main__heading-background-img {
-  background-color: @special-dark-grey;
-  background-image: url("../img/index-background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: contain;
-  }
-
-  @media (min-width: @tablet-width) {
-    background-color: @basic-white;
-    background-image: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
-}
-
 .page-main__heading-background-color {
-  background-color: rgba(104, 183, 56, 0.85);
   padding-top: 27px;
   padding-bottom: 164px;
+  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+
+  &::after {
+    content: "";
+    z-index: -3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-color: @special-dark-grey;
+    background-image: url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: contain;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
     padding-bottom: 20px;
+
+    &::after {
+      background-color: @basic-white;
+      background-image: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -112,6 +116,8 @@
 }
 
 .page-main__wrapper {
+  z-index: 3;
+
   @media (min-width: @tablet-width) {
     padding: 29px 85px 550px;
     background-image: url("../img/index-can-tablet.png");
@@ -131,7 +137,6 @@
 }
 
 .page-main__image {
-  z-index: 2;
   margin-top: -135px;
 
   @media (min-width: @tablet-width) {

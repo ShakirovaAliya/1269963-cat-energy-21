@@ -4,9 +4,9 @@
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  padding-left: 70px;
   flex-wrap: wrap;
   align-items: center;
+  padding-left: 73px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -32,25 +32,26 @@
 .social__link {
   display: block;
 
-  &--vkontakte path,
-  &--instagram path {
+  &--vkontakte svg,
+  &--instagram svg {
     fill: @grey-icon;
   }
 
-  &--facebook path {
+  &--facebook svg {
     stroke: @grey-icon;
+    fill: none;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &--vkontakte:hover path,
-  &--instagram:hover path {
+  &--vkontakte:hover svg,
+  &--instagram:hover svg {
     fill: @green;
   }
 
-  &--facebook:hover path {
+  &--facebook:hover svg {
     stroke: @green;
   }
 

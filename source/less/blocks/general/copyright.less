@@ -1,3 +1,12 @@
+.copyright {
+  width: 100%;
+  margin-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 165px;
+  }
+}
+
 .copyright__link {
   font-size: 16px;
   color: @special-dark-grey;
@@ -5,29 +14,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 286px;
-
-  &:hover {
-    & path {
-      fill: @green;
-    }
-  }
+  min-height: 34px;
+  margin-right: 0;
 
   &:active {
     opacity: 0.3;
   }
 
   & svg {
-    width: 40px;
-    height: 40px;
-  }
-
-  & path {
     fill: @grey-icon;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-top: -3px;
-    width: 165px;
+  &:hover {
+    & svg {
+      fill: @green;
+    }
   }
 }
