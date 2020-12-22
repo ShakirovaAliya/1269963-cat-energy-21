@@ -10,9 +10,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    justify-content: space-between;
     padding-left: 0;
-    margin-top: -2px;
   }
 }
 
@@ -25,7 +23,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 0;
+    margin-right: 28px;
+
+    &:nth-child(2n) {
+      margin-right: 21px;
+    }
   }
 }
 

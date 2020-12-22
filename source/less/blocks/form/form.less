@@ -312,6 +312,7 @@
 
   &:focus {
     border: 2px solid @special-dark-grey;
+    padding: 12px 16px 12px 14px;
   }
 
   &--tel svg {
@@ -331,9 +332,12 @@
     .heading(20px; 30px);
     color: @special-dark-grey;
     padding: 10px 20px;
-  }
 
-  @media (min-width: @tablet-width) {
+    &:focus {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
     &--age {
       padding: 10px 23px;
     }
