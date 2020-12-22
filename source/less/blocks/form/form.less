@@ -293,8 +293,7 @@
   align-items: flex-start;
   position: relative;
 
-  &:focus-within path,
-  &:focus-within line {
+  &:focus-within svg {
     stroke: @green;
   }
 }
@@ -312,10 +311,11 @@
   }
 
   &:focus {
-    border: 2px solid @special-dark-grey;
+    border-color: @special-dark-grey;
+    outline: 1px solid @special-dark-grey;
   }
 
-  &--tel path {
+  &--tel svg {
     fill: @basic-black;
   }
 
@@ -332,9 +332,7 @@
     .heading(20px; 30px);
     color: @special-dark-grey;
     padding: 10px 20px;
-  }
 
-  @media (min-width: @tablet-width) {
     &--age {
       padding: 10px 23px;
     }
@@ -577,6 +575,11 @@
   height: 150px;
   border: 1px solid @grey-border-input;
   padding: 8px 12px 0 13px;
+
+  &:focus {
+    border-color: @special-dark-grey;
+    outline: 1px solid @special-dark-grey;
+  }
 
   @media (min-width: @tablet-width) {
     .heading(20px; 30px);
