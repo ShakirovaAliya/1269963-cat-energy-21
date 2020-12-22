@@ -311,8 +311,8 @@
   }
 
   &:focus {
-    border: 2px solid @special-dark-grey;
-    padding: 12px 16px 12px 14px;
+    border-color: @special-dark-grey;
+    outline: 1px solid @special-dark-grey;
   }
 
   &--tel svg {
@@ -332,11 +332,6 @@
     .heading(20px; 30px);
     color: @special-dark-grey;
     padding: 10px 20px;
-
-    &:focus {
-      padding-top: 9px;
-      padding-bottom: 9px;
-    }
 
     &--age {
       padding: 10px 23px;
@@ -580,6 +575,11 @@
   height: 150px;
   border: 1px solid @grey-border-input;
   padding: 8px 12px 0 13px;
+
+  &:focus {
+    border-color: @special-dark-grey;
+    outline: 1px solid @special-dark-grey;
+  }
 
   @media (min-width: @tablet-width) {
     .heading(20px; 30px);
