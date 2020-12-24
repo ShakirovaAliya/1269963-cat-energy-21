@@ -40,3 +40,22 @@ if(slider) {
     sliderToggle.style.left = "0%";
   })
 }
+
+
+// form error
+
+var form = document.querySelector(".form");
+var formField = document.querySelectorAll(".form__field");
+
+if(form) {
+  form.addEventListener("submit", function (evt) {
+    for (var i=0; i<=4; i++) {
+      if (!formField[i].value) {
+        evt.preventDefault();
+        formField[i].classList.add("form__field--error");
+      } else {
+        formField[i].classList.remove("form__field--error");
+      }
+    }
+  })
+}
