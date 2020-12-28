@@ -1,5 +1,5 @@
-var navMain = document.querySelector(".main-nav");
-var navToggle = document.querySelector(".main-nav__toggle");
+let navMain = document.querySelector(".main-nav");
+let navToggle = document.querySelector(".main-nav__toggle");
 navMain.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener('click', function(evt) {
@@ -14,14 +14,14 @@ navToggle.addEventListener('click', function(evt) {
 
 
 // slider
-var buttonBefore = document.querySelector(".slider__button--before");
-var buttonAfter = document.querySelector(".slider__button--after");
-var currentSlider = document.querySelector(".slider__item");
-var firstSlide = document.querySelector(".slider__item--before");
-var secondSlide = document.querySelector(".slider__item--after");
-var sliderBar = document.querySelector(".slider__bar");
-var sliderToggle = document.querySelector(".slider__toggle");
-var slider = document.querySelector(".slider");
+let buttonBefore = document.querySelector(".slider__button--before");
+let buttonAfter = document.querySelector(".slider__button--after");
+let currentSlider = document.querySelector(".slider__item");
+let firstSlide = document.querySelector(".slider__item--before");
+let secondSlide = document.querySelector(".slider__item--after");
+let sliderBar = document.querySelector(".slider__bar");
+let sliderToggle = document.querySelector(".slider__toggle");
+let slider = document.querySelector(".slider");
 
 if(slider) {
   buttonAfter.addEventListener("click", function (evt) {
@@ -44,8 +44,8 @@ if(slider) {
 
 // form error
 
-var form = document.querySelector(".form");
-var formField = document.querySelectorAll(".form__field");
+let form = document.querySelector(".form");
+let formField = document.querySelectorAll(".form__field");
 
 if(form) {
   form.addEventListener("submit", function (evt) {
@@ -62,16 +62,7 @@ if(form) {
 
 // map
 
-var map = document.querySelector(".address__image");
-map.style.display = "none";
-
-var myMap;
-
-function init () {
-    myMap = new ymaps.Map('map', {
-        center: [55.76, 37.64],
-        zoom: 10
-    }, {
-        searchControlProvider: 'yandex#search'
-    });
-}
+let mapImg = document.querySelector(".address__image");
+mapImg.style.display = "none";
+let myMap = document.getElementById("mymap");
+myMap.style.height = "100%";

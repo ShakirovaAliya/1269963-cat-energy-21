@@ -404,16 +404,16 @@
         </div>
       </div>
       <div class="address__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d385dd7507c752b2d475c28e25e44942942c50b550ffed42603a92f0b25fe49&amp;width=100%25&amp;height=362&amp;lang=ru_RU&amp;scroll=true"></script>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="address__image" id="map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362"
+          <img class="address__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="362"
             alt="Адрес: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </picture>
+        <div id="mymap"></div>
       </div>
     </section>
   </main>
@@ -461,6 +461,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d385dd7507c752b2d475c28e25e44942942c50b550ffed42603a92f0b25fe49&amp;width=100%25&amp;height=100%25&amp;id=mymap&amp;lang=ru_RU&amp;scroll=true"></script>
   <script src="js/script.min.js"></script>
 
 </body>
