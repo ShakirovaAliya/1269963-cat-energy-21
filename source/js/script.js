@@ -83,7 +83,7 @@ function init () {
   },
   {
     iconLayout: 'default#image',
-    iconImageHref: 'img/map-pin.svg',
+    iconImageHref: 'img/map-pin.png',
     iconImageSize: [57, 53],
     iconImageOffset: [-28, -53],
 });
