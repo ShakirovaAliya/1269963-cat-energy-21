@@ -62,7 +62,30 @@ if(form) {
 
 // map
 
+ymaps.ready(init);
+
 let mapImg = document.querySelector(".address__image");
 mapImg.style.display = "none";
-let myMap = document.getElementById("mymap");
+let myMap = document.getElementById("map");
 myMap.style.height = "100%";
+
+function init () {
+  let yaMap = new ymaps.Map('map', {
+    center: [59.938635, 30.323118],
+    zoom: 16,
+    controls: ['zoomControl'],
+    behaviors: ['drag']
+  });
+
+  let mapPin = new ymaps.Placemark([59.938635, 30.323118], {
+    hintContent: 'г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8',
+    balloonContent: 'г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8'
+  },
+  {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/map-pin.svg',
+    iconImageSize: [57, 53],
+    iconImageOffset: [-28, -53],
+});
+  yaMap.geoObjects.add(mapPin);
+}
