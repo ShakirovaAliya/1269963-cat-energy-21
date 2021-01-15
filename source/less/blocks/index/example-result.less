@@ -22,7 +22,7 @@
   margin-right: 31px;
   margin-bottom: 26px;
 
-  &:nth-child(2) {
+  &:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -71,15 +71,18 @@
   line-height: 12px;
   background-color: @bg-grey;
   margin: 0;
-  width: 85px;
+  max-width: 85px;
   text-align: center;
   top: 47px;
   padding: 0 13px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  max-height: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    width: 140px;
+    max-width: 140px;
     background-color: @basic-white;
     top: 63px;
     padding: 0 5px;
@@ -96,6 +99,7 @@
   margin: 8px auto 42px;
   width: 188px;
   display: flex;
+  flex-wrap: wrap;
 
   & p {
     margin: 0;

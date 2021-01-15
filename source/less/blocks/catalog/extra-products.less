@@ -17,6 +17,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 33px;
+  word-break: break-all;
 
   & .extra-products__line {
     .wrapper;
@@ -79,6 +80,7 @@
   margin: 0;
   margin-bottom: 39px;
   border-bottom: 1px solid @grey-border;
+  word-break: break-all;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @special-grey;
@@ -212,6 +214,7 @@
   flex-wrap: wrap;
   text-align: center;
   background-color: @green;
+  max-height: 289px;
   margin-bottom: 35px;
   padding-top: 186px;
   padding-bottom: 43px;
@@ -242,6 +245,7 @@
     justify-content: space-between;
     text-align: left;
     padding: 71px 124px 69px 423px;
+    max-height: 200px;
     background-image: url("../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -259,6 +263,7 @@
     width: 245px;
     text-align: center;
     padding: 0;
+    max-height: 289px;
     padding-top: 184px;
     padding-bottom: 42px;
     margin-bottom: 0;
@@ -278,4 +283,6 @@
 .extra-products__text {
   margin: 0 auto;
   width: 161px;
+  height: 100px;
+  overflow: hidden;
 }

@@ -2,9 +2,10 @@
   border-top: 1px solid @grey-border;
   border-bottom: 1px solid @grey-border;
 
-
   @media (min-width: @tablet-width) {
-    width: 324px;
+    max-width: 324px;
+    height: 429px;
+    max-height: 429px;
     border: 2px solid @basic-grey;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -29,14 +30,15 @@
   margin-top: 0;
   margin-bottom: 9px;
   padding-top: 78px;
+  max-height: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-
   & p {
     margin-top: 0;
+    overflow: hidden;
   }
 
   &::before,
@@ -56,18 +58,26 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding: 63px 50px 0 50px;
-    height: 243px;
+    padding: 63px 50px 20px 50px;
+    margin-bottom: 55px;
+    max-height: 200px;
 
     &::before,
     &::after {
       width: 60px;
       top: -15px;
     }
+
+    & p {
+      max-height: 70px;
+      width: 220px;
+      overflow: hidden;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 60px 10px 0 10px;
+    margin-bottom: 70px;
 
     &::before,
     &::after {
@@ -90,6 +100,7 @@
     margin-bottom: 24px;
     padding-left: 40px;
     padding-right: 40px;
+    width: 220px;
   }
 }
 
@@ -98,6 +109,7 @@
   color: @special-dark-grey;
   background-color: @basic-grey;
   margin: 0 auto 24px;
+  word-break: break-all;
 
   &:hover,
   &:focus {
@@ -111,6 +123,7 @@
   @media (min-width: @tablet-width) {
     width: 249px;
     margin-bottom: 35px;
+    min-height: 40px;
   }
 
   @media (min-width: @desktop-width) {

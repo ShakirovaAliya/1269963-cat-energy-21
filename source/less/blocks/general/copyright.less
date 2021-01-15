@@ -18,6 +18,16 @@
   min-height: 34px;
   margin-right: 0;
 
+  & .copyright__text {
+    max-width: 50%;
+    word-break: break-all;
+
+    @media (min-width: @tablet-width) {
+      max-width: 115px;
+      margin-top: 0;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }

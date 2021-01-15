@@ -1,5 +1,6 @@
 .form {
   padding-bottom: 32px;
+  word-break: break-all;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 57px;
@@ -335,6 +336,7 @@
   &--tel,
   &--mail {
     border-color: @special-grey;
+    padding-right: 35px;
   }
 
   &--error {
@@ -365,6 +367,11 @@
 
     &--tel {
       padding: 10px 18px;
+    }
+
+    &--tel,
+    &--mail {
+      padding-right: 40px;
     }
   }
 }
