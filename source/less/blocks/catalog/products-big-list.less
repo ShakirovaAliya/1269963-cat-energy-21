@@ -3,16 +3,13 @@
   border-bottom: 1px solid @grey-border;
 
   @media (min-width: @tablet-width) {
-    max-width: 324px;
-    height: 429px;
-    max-height: 429px;
+    width: 324px;
     border: 2px solid @basic-grey;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    padding-top: 95px;
-    padding-bottom: 0;
+    margin-top: 107px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,24 +18,22 @@
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding-top: 97px;
+    margin-top: 73px;
   }
 }
 
 .products-big-list__text {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 9px;
-  padding-top: 78px;
-  max-height: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+
   & p {
+    width: 221px;
     margin-top: 0;
-    overflow: hidden;
+    overflow-wrap: break-word;
   }
 
   &::before,
@@ -58,31 +53,23 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding: 63px 50px 20px 50px;
-    margin-bottom: 55px;
-    max-height: 200px;
 
     &::before,
     &::after {
       width: 60px;
-      top: -15px;
+      top: 80px;
     }
 
     & p {
-      max-height: 70px;
-      width: 220px;
-      overflow: hidden;
+      width: 167px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 10px 0 10px;
-    margin-bottom: 70px;
-
     &::before,
     &::after {
       width: 60px;
-      top: -20px;
+      top: 79px;
     }
   }
 }
@@ -90,17 +77,20 @@
 .products-big-list__bold-text {
   .heading(16px; 20px);
   .uppercase-text(@black-text);
-  margin-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 78px;
+  margin-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     .heading(20px; 22px);
     color: @black-text;
-    margin-bottom: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
     width: 220px;
+    padding-top: 163px;
+    margin-bottom: 23px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    padding-top: 157px;
   }
 }
 
@@ -108,7 +98,7 @@
   .button;
   color: @special-dark-grey;
   background-color: @basic-grey;
-  margin: 0 auto 24px;
+  margin: 8px auto 24px;
   word-break: break-all;
 
   &:hover,
@@ -122,11 +112,11 @@
 
   @media (min-width: @tablet-width) {
     width: 249px;
-    margin-bottom: 35px;
-    min-height: 40px;
+    margin-top: 70px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
+    margin-top: 71px;
   }
 }

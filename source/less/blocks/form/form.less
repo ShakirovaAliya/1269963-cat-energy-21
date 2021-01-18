@@ -468,23 +468,24 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    cursor: pointer;
+  }
+
+  & label:focus {
+    border: 5px solid @red;
   }
 }
 
 .form__radio {
-  display: none;
-
   & + label {
     position: relative;
     padding-left: 46px;
-    cursor: pointer;
   }
 
   & + label::before {
     position: absolute;
     content: "";
     border: 1px solid @special-grey;
-    cursor: pointer;
     left: 0;
     width: 30px;
     height: 30px;
@@ -495,7 +496,15 @@
     border-color: @hover-grey-border;
   }
 
-  &:disabled + label {
+  &:focus + label::before {
+    outline: thin dotted @special-dark-grey;
+  }
+
+  &:disabled + label,
+  &:checked:disabled + label,
+  &:disabled:hover + label,
+  &:disabled:focus + label {
+    pointer-events: none;
     opacity: 0.3;
   }
 
@@ -503,7 +512,6 @@
     display: none;
     position: absolute;
     content: "";
-    cursor: pointer;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -536,19 +544,15 @@
 }
 
 .form__checkbox {
-  display: none;
-
   & + label {
     position: relative;
     padding-left: 46px;
-    cursor: pointer;
   }
 
   & + label::before {
     position: absolute;
     content: "";
     border: 1px solid @special-grey;
-    cursor: pointer;
     left: 0;
     width: 30px;
     height: 30px;
@@ -558,15 +562,22 @@
     border-color: @hover-grey-border;
   }
 
-  &:disabled + label {
+  &:focus + label::before {
+    outline: thin dotted @special-dark-grey;
+  }
+
+  &:disabled + label,
+  &:checked:disabled + label,
+  &:disabled:hover + label,
+  &:disabled:focus + label {
     opacity: 0.3;
+    pointer-events: none;
   }
 
   & + label::after {
     display: none;
     position: absolute;
     content: "";
-    cursor: pointer;
     width: 7px;
     height: 13px;
     border: 2px solid transparent;
@@ -609,6 +620,10 @@
   border: 1px solid @grey-border-input;
   padding: 8px 12px 0 13px;
 
+  &:hover {
+    border-color: @special-grey;
+  }
+
   &:focus {
     border-color: @special-dark-grey;
     outline: 1px solid @special-dark-grey;
@@ -645,6 +660,11 @@
   .button;
   border: none;
   margin: 0 auto 16px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px dotted @grey-border-input;
+  }
 
   @media (min-width: @tablet-width) {
     width: 282px;

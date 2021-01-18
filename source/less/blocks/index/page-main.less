@@ -11,24 +11,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 140px;
-    padding-bottom: 200px;
-    background-image: url("../img/index-can-desktop.png");
-    background-repeat: no-repeat;
-    background-position: 63% 0;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-desktop@2x.png");
-      background-size: 552px auto;
-    }
+    margin-top: -560px;
+    padding-left: 190px;
   }
 }
 
 .page-main__heading-background-color {
   padding-top: 27px;
   padding-bottom: 164px;
-  min-height: 302px;
   background-color: rgba(104, 183, 56, 0.85);
   position: relative;
 
@@ -57,14 +47,13 @@
     padding-bottom: 20px;
 
     &::after {
-      background-color: @basic-white;
-      background-image: none;
+      display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 25px;
     background-color: transparent;
+    width: 40%;
   }
 }
 
@@ -79,7 +68,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 80px;
+    margin-bottom: 35px;
+    padding: 0;
   }
 }
 
@@ -97,8 +87,8 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-bottom: 40px;
-    margin-top: 55px;
+    padding: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -111,10 +101,6 @@
 
   @media (min-width: @tablet-width) {
     .heading(20px; 20px);
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
   }
 }
 
@@ -133,8 +119,9 @@
 
     @media (min-width: @desktop-width) {
       background-image: none;
-      padding-left: 80px;
-      padding-bottom: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
@@ -144,6 +131,13 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 123px;
+    width: 552px;
+    margin-top: -315px;
   }
 }
 
@@ -163,5 +157,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 16px 20px 18px;
+    order: -1;
+    overflow-wrap: break-word;
+    margin-bottom: 200px;
   }
 }
