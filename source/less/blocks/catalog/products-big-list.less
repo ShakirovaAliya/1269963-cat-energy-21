@@ -1,40 +1,60 @@
 .products-big-list {
-  border-top: 1px solid @grey-border;
-  border-bottom: 1px solid @grey-border;
-
   @media (min-width: @tablet-width) {
-    width: 324px;
-    border: 2px solid @basic-grey;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-top: 107px;
+    position: static;
   }
 
   @media (min-width: @desktop-width) {
-    width: 245px;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 73px;
+  }
+}
+
+.products-big-list__container {
+  border-top: 1px solid @grey-border;
+  border-bottom: 1px solid @grey-border;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @basic-grey;
+    padding: 48px 36px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 90px 36px 10px;
   }
 }
 
 .products-big-list__text {
-  text-align: center;
+  width: 221px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & p {
+    margin-top: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.products-big-list__bold-text {
+  .heading(16px; 20px);
+  .uppercase-text(@black-text);
+  padding-top: 78px;
+  margin-bottom: 9px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
-  & p {
-    width: 221px;
-    margin-top: 0;
-    overflow-wrap: break-word;
-  }
 
   &::before,
   &::after {
@@ -51,46 +71,26 @@
   }
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
-
-    &::before,
-    &::after {
-      width: 60px;
-      top: 80px;
-    }
-
-    & p {
-      width: 167px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before,
-    &::after {
-      width: 60px;
-      top: 79px;
-    }
-  }
-}
-
-.products-big-list__bold-text {
-  .heading(16px; 20px);
-  .uppercase-text(@black-text);
-  padding-top: 78px;
-  margin-bottom: 9px;
-
-  @media (min-width: @tablet-width) {
     .heading(20px; 22px);
     color: @black-text;
-    width: 220px;
-    padding-top: 163px;
-    margin-bottom: 23px;
+    padding-top: 115px;
+    margin-bottom: 24px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: 36px;
+    }
   }
 
-
   @media (min-width: @desktop-width) {
-    padding-top: 157px;
+    padding-top: 70px;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: -10px;
+    }
   }
 }
 
@@ -112,11 +112,11 @@
 
   @media (min-width: @tablet-width) {
     width: 249px;
-    margin-top: 70px;
+    margin-top: 85px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
-    margin-top: 71px;
+    margin-top: 85px;
   }
 }
