@@ -6,7 +6,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 40px;
-    margin-top: 0;
+    margin-top: -15px;
   }
 }
 
@@ -142,7 +142,9 @@
   margin-top: 0;
   margin-bottom: 35px;
   padding-left: 72px;
+  padding-right: 20px;
   position: relative;
+  word-break: break-all;
 
   &::before {
     position: absolute;
@@ -198,6 +200,7 @@
   border-top: 1px solid @grey-line;
   width: 240px;
   padding-top: 19px;
+  word-break: break-all;
 
   &:active,
   &:focus {
@@ -226,6 +229,16 @@
     border-left: 5px solid @basic-black;
   }
 
+  &:hover {
+    &::before {
+      width: 26px;
+    }
+
+    &::after {
+      left: 126px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     border: none;
@@ -240,6 +253,16 @@
       left: 150px;
       top: 22px;
     }
+
+    &:hover {
+      &::before {
+        width: 28px;
+      }
+
+      &::after {
+        left: 158px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -249,8 +272,14 @@
     }
 
     &::after {
-      left: 149px;
+      left: 155px;
       top: 21px;
+    }
+
+    &:hover {
+      &::after {
+        left: 160px;
+      }
     }
   }
 }
