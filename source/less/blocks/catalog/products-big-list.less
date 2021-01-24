@@ -1,48 +1,42 @@
-.products-big-list {
-  @media (min-width: @tablet-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    position: static;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
 .products-big-list__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   border-top: 1px solid @grey-border;
   border-bottom: 1px solid @grey-border;
 
   @media (min-width: @tablet-width) {
+    padding: 5% 10.5% 10%;
+    align-items: center;
     border: 2px solid @basic-grey;
-    padding: 48px 36px 10px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 90px 36px 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15%;
   }
 }
 
 .products-big-list__text {
-  width: 221px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 87%;
+  text-align: center;
+  word-break: break-all;
 
   & p {
     margin-top: 0;
   }
 
   @media (min-width: @tablet-width) {
-    width: 167px;
     font-size: 16px;
     line-height: 18px;
-    text-align: center;
+    width: 100%;
+
+    & p {
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -73,24 +67,22 @@
   @media (min-width: @tablet-width) {
     .heading(20px; 22px);
     color: @black-text;
-    padding-top: 115px;
-    margin-bottom: 24px;
+    padding-top: 47%;
+    padding-bottom: 9%;
+    max-width: 55%;
+    word-break: normal;
+    overflow-wrap: break-word;
 
     &::before,
     &::after {
-      width: 60px;
-      top: 36px;
+      width: 40%;
+      top: 22%;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 70px;
-
-    &::before,
-    &::after {
-      width: 60px;
-      top: -10px;
-    }
+    max-width: 100%;
+    padding-top: 49%;
   }
 }
 
@@ -98,7 +90,8 @@
   .button;
   color: @special-dark-grey;
   background-color: @basic-grey;
-  margin: 8px auto 24px;
+  margin-top: 9px;
+  margin-bottom: 24px;
   word-break: break-all;
 
   &:hover,
@@ -111,12 +104,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 249px;
-    margin-top: 85px;
+    margin: auto 0 0;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 169px;
-    margin-top: 85px;
+    width: 70%;
   }
 }

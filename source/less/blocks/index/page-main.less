@@ -21,6 +21,8 @@
   padding-bottom: 164px;
   background-color: rgba(104, 183, 56, 0.85);
   position: relative;
+  overflow-wrap: break-word;
+  word-break: break-all;
 
   &::after {
     content: "";
@@ -59,36 +61,34 @@
 
 .page-main__container {
   .wrapper;
+  padding: 0 10%;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    padding-left: 87px;
+    padding-left: 12%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 35px;
     padding: 0;
+    margin: 0;
+    width: 30%;
   }
 }
 
 .page-main__title {
   .heading(36px; 36px);
   color: @basic-white;
-  margin: 0 0 25px 0;
-  overflow-wrap: break-word;
+  margin: 0 auto 25px;
+  width: 250px;
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
-    margin-bottom: 41px;
+    margin: 0 auto 41px 0;
     width: 414px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 0 auto 35px 0;
     padding: 0;
-    margin-bottom: 35px;
   }
 }
 
@@ -97,10 +97,13 @@
   color: @basic-white;
   text-transform: uppercase;
   margin: 0;
-  word-break: break-all;
 
   @media (min-width: @tablet-width) {
     .heading(20px; 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 283px;
   }
 }
 
@@ -108,9 +111,11 @@
   z-index: 3;
 
   @media (min-width: @tablet-width) {
-    padding: 29px 85px 550px;
+    padding: 0 12%;
+    min-height: 610px;
     background-image: url("../img/index-can-tablet.png");
     background-repeat: no-repeat;
+    background-position: top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-can-tablet@2x.png");
@@ -122,6 +127,7 @@
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+      min-height: 200px;
     }
   }
 }
@@ -137,28 +143,28 @@
     display: block;
     margin-left: 123px;
     width: 552px;
-    margin-top: -315px;
+    margin-top: -280px;
   }
 }
 
 .page-main__button {
   .button(14px);
   line-height: 18px;
-  width: 280px;
   padding-bottom: 12px;
   margin: 0 auto;
+  overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     width: 244px;
     padding: 18px 26px;
-    margin: 0;
+    margin: 29px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 16px 20px 18px;
     order: -1;
     overflow-wrap: break-word;
-    margin-bottom: 200px;
+    margin: 35px 0 200px 0;
   }
 }

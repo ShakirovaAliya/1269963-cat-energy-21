@@ -90,7 +90,7 @@
   @media (min-width: @desktop-width) {
     border-left: none;
     border-right: none;
-    width: 896px;
+    width: 73%;
     margin-bottom: 0;
   }
 }
@@ -122,11 +122,12 @@
     align-items: center;
 
     &:nth-child(2) .extra-products__info {
-      width: 287px;
+      width: 47%;
     }
 
+
     &:nth-child(3) .extra-products__info {
-      width: 287px;
+      width: 47%;
     }
   }
 }
@@ -138,7 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 23px 36px 23px 37px;
+    padding: 4% 5% 3%;
     width: 100%;
   }
 
@@ -163,16 +164,16 @@
 
 .extra-products__link {
   .button;
-  width: 280px;
+  width: 100%;
   margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    width: 632px;
-    margin: 0 auto 28px;
+    width: 90%;
+    margin: 0 auto 3.6%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 244px;
+    width: 27%;
     margin: 0;
   }
 }
@@ -212,6 +213,7 @@
   color: @basic-white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   background-color: @green;
   margin-bottom: 35px;
@@ -236,14 +238,12 @@
     width: 78px;
     height: 80px;
     top: 55px;
-    left: 101px;
   }
 
   @media (min-width: @tablet-width) {
     align-items: center;
-    justify-content: space-between;
     text-align: left;
-    padding: 30px 30px 70px 330px;
+    padding: 9.5% 8% 10% 50%;
     background-image: url("../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -251,14 +251,15 @@
     }
 
     &::before {
-      width: 80px;
-      height: 82px;
-      left: 78px;
+      width: 20%;
+      height: 42%;
+      left: 6.5%;
+      top: 28%;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 245px;
+    width: 20%;
     text-align: center;
     padding: 0;
     margin-bottom: 0;
@@ -269,8 +270,9 @@
     }
 
     &::before {
-      top: 55px;
-      left: 84px;
+      width: 25%;
+      top: 12%;
+      left: 38%;
     }
   }
 }
@@ -281,10 +283,11 @@
   overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
-    margin-top: 40px;
+    width: 54%;
   }
 
   @media (min-width: @desktop-width) {
+    width: 66%;
     margin-top: 145px;
   }
 }

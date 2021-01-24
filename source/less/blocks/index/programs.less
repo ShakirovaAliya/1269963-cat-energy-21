@@ -1,11 +1,10 @@
 .programs {
   @media (min-width: @tablet-width) {
-    margin-top: -615px;
     margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: -15px;
   }
 }
@@ -13,10 +12,6 @@
 .programs__list {
   .wrapper;
   list-style: none;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 590px;
-  }
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -27,8 +22,8 @@
 
 .programs__item {
   @media (min-width: @desktop-width) {
-    width: 570px;
-    margin-right: 80px;
+    width: 47%;
+    margin-right: 6%;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -38,8 +33,8 @@
 
 .programs__card {
   background-color: @basic-grey;
-  padding: 35px 0 22px 20px;
-  margin-bottom: 20px;
+  padding: 13% 7% 8%;
+  margin-bottom: 6%;
 
   &--slim {
     & .programs__title {
@@ -64,14 +59,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 78px 279px 64px 52px;
-    margin-bottom: 30px;
+    padding: 11% 40% 9% 7%;
+    margin-bottom: 4%;
 
     &--slim {
       & .programs__title {
         &::before {
           top: 3px;
-          left: 394px;
+          left: 105%;
           background-size: cover;
         }
       }
@@ -89,16 +84,20 @@
         &::before {
           width: 268px;
           height: 200px;
-          left: 360px;
+          left: 95%;
           top: 13px;
           background-size: cover;
         }
+      }
+
+      & .programs__description {
+        width: 91%;
       }
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 51px 65px 52px;
+    padding: 14% 9% 11% 9%;
 
     &--slim {
       & .programs__title {
@@ -116,8 +115,10 @@
     }
 
     &--pro {
+      padding-left: 55px;
+
       & .programs__title {
-        margin-bottom: 75px;
+        margin-bottom: 73px;
         padding-left: 162px;
 
         &::before {
@@ -131,6 +132,7 @@
       & .programs__description {
         padding-right: 0;
         padding-bottom: 0;
+        width: 97%;
       }
     }
   }
@@ -170,7 +172,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 162px;
-    margin-bottom: 75px;
+    margin-bottom: 73px;
 
     &::before {
       width: 100px;
@@ -180,8 +182,9 @@
 }
 
 .programs__description {
-  padding-right: 33px;
+  width: 100%;
   margin-bottom: 21px;
+  overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
@@ -198,8 +201,8 @@
   display: block;
   position: relative;
   border-top: 1px solid @grey-line;
-  width: 240px;
   padding-top: 19px;
+  width: 100%;
   word-break: break-all;
 
   &:active,

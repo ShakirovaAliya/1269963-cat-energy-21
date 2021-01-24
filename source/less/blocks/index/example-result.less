@@ -4,7 +4,7 @@
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
-    margin-bottom: 186px;
+    margin-bottom: 137px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,8 +17,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  width: 124px;
-  margin-right: 31px;
+  width: 45%;
+  margin-right: 10%;
   margin-bottom: 8px;
 
   &:nth-child(2n) {
@@ -26,44 +26,32 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 162px;
-    margin-right: 42px;
+    width: 23%;
+    margin-right: 6%;
     margin-bottom: 49px;
-
-    &--weight .example-result__text {
-      width: 114px;
-    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 38px;
+    width: 36%;
+    margin-right: 10%;
+    margin-bottom: 33px;
   }
 }
 
 .example-result__count {
   .heading(24px; 24px);
-  padding: 14px 41px 16px;
+  padding: 14px 0 16px;
+  text-align: center;
   text-transform: uppercase;
   margin: 0;
-  width: 124px;
+  width: 100%;
   border: 1px solid @special-grey;
   border-radius: 3px;
   overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     .heading(30px; 37px);
-    padding: 14px 56px 19px 56px;
-    width: 162px;
-  }
-}
-
-.example-result__item--duration .example-result__count {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 29px;
-    padding-right: 29px;
+    padding: 14px 0 19px;
   }
 }
 
@@ -72,7 +60,7 @@
   line-height: 12px;
   background-color: @bg-grey;
   margin-top: -10px;
-  width: 85px;
+  width: 70%;
   text-align: center;
   padding: 0 13px;
   overflow-wrap: break-word;
@@ -80,12 +68,13 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    width: 140px;
+    width: 85%;
     background-color: @basic-white;
     padding: 0 5px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 90%;
     background-color: @bg-grey;
   }
 }
@@ -94,10 +83,11 @@
   .heading(14px; 20px);
   text-transform: uppercase;
   margin: 0 auto 42px;
-  width: 188px;
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
 
   & p {
     margin: 0;
@@ -106,7 +96,7 @@
 
   @media (min-width: @tablet-width) {
     .heading(20px; 27px);
-    width: 174px;
+    width: 25%;
     text-align: right;
     margin-right: 0;
     flex-direction: column;
@@ -117,7 +107,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 324px;
+    width: 74%;
     text-align: left;
     margin: 0;
     margin-top: 0;

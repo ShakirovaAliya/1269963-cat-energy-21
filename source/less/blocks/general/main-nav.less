@@ -62,16 +62,21 @@
   @media (min-width: @tablet-width) {
     .heading(18px; 24px);
     font-weight: 400;
-    width: 440px;
+    width: 63%;
   }
 
   @media (min-width: @desktop-width) {
     .heading(20px; 20px);
-    width: 50%;
+    width: 50.2%;
   }
 
   &--index {
+    @media (min-width: @tablet-width) {
+      width: 63%;
+    }
+
     @media (min-width: @desktop-width) {
+      width: 50%;
       background-image: url("../img/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-size: cover;

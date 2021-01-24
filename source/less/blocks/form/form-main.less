@@ -1,19 +1,28 @@
+.form-main__wrapper {
+  .wrapper;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .form-main__heading {
   .heading(36px; 36px);
-  .wrapper;
   margin-bottom: 37px;
   margin-top: 27px;
   word-break: break-all;
 
   @media (min-width: @tablet-width) {
     .heading(60px; 60px);
-    padding-left: 70px;
     margin-top: 59px;
     margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
     margin-top: 60px;
     margin-bottom: 56px;
   }
@@ -21,21 +30,16 @@
 
 .form-main__text {
   .heading(14px; 18px);
-  .wrapper;
   text-transform: uppercase;
   margin-bottom: 39px;
-  overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     .heading(20px; 30px);
     margin-bottom: 65px;
-    padding-left: 70px;
-    padding-right: 300px;
+    max-width: 323px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
     margin-bottom: 66px;
-    padding-right: 950px;
   }
 }
