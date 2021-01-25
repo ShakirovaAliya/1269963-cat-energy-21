@@ -212,11 +212,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 62px;
+        margin-bottom: 42px;
       }
 
       & .form__point {
-        margin-bottom: 0;
+        margin-bottom: 20px;
         width: 46.8%;
       }
     }
@@ -226,7 +226,7 @@
     }
 
     &--add {
-      margin-bottom: 17px;
+      margin-bottom: 0;
 
       & .form__title {
         margin-bottom: 63px;
@@ -471,10 +471,18 @@
   &--goal {
     color: @special-dark-text;
     padding: 27px 0 25px;
+
+    & .form__option:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &--extra {
     color: @basic-black;
+
+    & .form__option:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &--extra .form__option {
@@ -495,6 +503,7 @@
     &--extra {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
 
       & .form__option {
         width: 44.7%;
@@ -505,12 +514,17 @@
           margin-right: 0;
         }
       }
+
+      & .form__option:last-child {
+        margin-bottom: 54px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
     &--extra {
       padding-right: 24px;
+      margin-bottom: 17px;
 
       & .form__option {
         width: 221px;
@@ -526,10 +540,6 @@
 
 .form__option {
   margin-bottom: 25px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   & label {
     display: flex;

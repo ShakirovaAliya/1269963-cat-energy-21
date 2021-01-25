@@ -137,22 +137,6 @@
         padding-bottom: 0;
         width: 97%;
       }
-
-      & .programs__link {
-        &::before {
-          left: 130px;
-        }
-
-        &::after {
-          left: 148px;
-        }
-
-        &:hover {
-          &::after {
-            left: 155px;
-          }
-        }
-      }
     }
   }
 }
@@ -202,40 +186,37 @@
 
 .programs__description {
   width: 100%;
-  margin-bottom: 21px;
+  border-bottom: 1px solid @grey-line;
+  padding-bottom: 21px;
   overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 33px;
   }
 }
 
 .programs__link {
   .heading(16px; 16px);
   text-transform: uppercase;
-  display: block;
-  position: relative;
-  border-top: 1px solid @grey-line;
-  padding-top: 19px;
-  width: 100%;
+  padding-top: 5px;
   word-break: break-all;
-
-  &:active,
-  &:focus {
-    opacity: 0.3;
-  }
+  width: 40%;
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  position: relative;
 
   &::before {
     position: absolute;
     content: "";
     width: 18px;
     height: 2px;
-    left: 101px;
-    top: 26px;
+    left: 105%;
     background-color: @basic-black;
   }
 
@@ -244,11 +225,15 @@
     content: "";
     width: 0;
     height: 0;
-    left: 118px;
-    top: 22px;
+    left: 123%;
     background-color: transparent;
     border: 5px solid transparent;
     border-left: 5px solid @basic-black;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
   }
 
   &:hover {
@@ -257,23 +242,21 @@
     }
 
     &::after {
-      left: 126px;
+      left: 123px;
     }
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    border: none;
+    padding-top: 0;
+    width: 34%;
 
     &::before {
       width: 20px;
-      left: 133px;
-      top: 26px;
     }
 
     &::after {
-      left: 150px;
-      top: 22px;
+      left: 118%;
     }
 
     &:hover {
@@ -288,15 +271,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    &::before {
-      left: 135px;
-      top: 25px;
-    }
-
-    &::after {
-      left: 155px;
-      top: 21px;
-    }
+    width: 27.3%;
 
     &:hover {
       &::after {

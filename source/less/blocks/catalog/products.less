@@ -178,8 +178,35 @@
   margin-bottom: 23px;
   word-break: break-all;
 
+  &--big-list {
+    color: @special-dark-grey;
+    background-color: @basic-grey;
+    margin-top: 9px;
+    margin-bottom: 24px;
+    word-break: break-all;
+
+    &:hover,
+    &:focus {
+      background-color: @grey-button-hover;
+    }
+
+    &:active {
+      color: @catalog-button-active;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-bottom: 0;
+
+    &--big-list {
+      margin: auto 0 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--big-list {
+      width: 70%;
+    }
   }
 }
