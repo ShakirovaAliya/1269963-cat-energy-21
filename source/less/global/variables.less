@@ -32,18 +32,16 @@
 
 // mixin //
 .wrapper() {
-  width: @mobile-width;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 6%;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    padding: 0 30px;
+    padding: 0 4%;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    padding: 0 110px;
+    padding: 0 7.7%;
   }
 }
 
@@ -70,7 +68,7 @@
   text-transform: uppercase;
   color: @basic-white;
   background-color: @green;
-  width: 280px;
+  width: 87%;
   padding: 10px;
 
   &:hover,
