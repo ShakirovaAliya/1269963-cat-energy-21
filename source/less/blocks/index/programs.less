@@ -33,7 +33,7 @@
 
 .programs__card {
   background-color: @basic-grey;
-  padding: 13% 7% 8%;
+  padding: 13% 7% 7%;
   margin-bottom: 18px;
 
   &--slim {
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 10.7% 40% 9.3% 7%;
+    padding: 10.7% 40% 8.4% 7%;
     margin-bottom: 30px;
 
     &--slim {
@@ -78,7 +78,6 @@
 
     &--pro {
       padding-top: 11%;
-      padding-bottom: 9.2%;
 
       & .programs__title {
         padding-left: 0;
@@ -100,7 +99,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 14% 9% 11% 9%;
+    padding: 14% 9% 10.3% 9%;
 
     &--slim {
       & .programs__title {
@@ -191,25 +190,25 @@
   overflow-wrap: break-word;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 }
 
 .programs__link {
-  .heading(16px; 16px);
+  .heading(16px; 18px);
   text-transform: uppercase;
   padding-top: 5px;
-  word-break: break-all;
   width: 40%;
   max-width: 60%;
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 0;
 
   &::before {
     position: absolute;
@@ -250,6 +249,7 @@
     font-size: 20px;
     padding-top: 0;
     width: 34%;
+    line-height: 25px;
 
     &::before {
       width: 20px;
