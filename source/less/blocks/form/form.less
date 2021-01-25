@@ -66,7 +66,7 @@
     margin-bottom: 12px;
 
     & .form__title {
-      margin-bottom: 28px;
+      margin-bottom: 34px;
 
       &::before {
         top: 17px;
@@ -217,7 +217,7 @@
 
       & .form__point {
         margin-bottom: 0;
-        width: 568px;
+        width: 46.8%;
       }
     }
 
@@ -246,7 +246,13 @@
   }
 
   &--line {
-    line-height: 30px;
+    line-height: 27px;
+
+    & .form__legend {
+      & > span {
+        background-color: transparent;
+      }
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -255,6 +261,14 @@
     &::before {
       left: 0;
       top: 28px;
+    }
+
+    &--line {
+      & .form__legend {
+        & > span {
+          background-color: @basic-white;
+        }
+      }
     }
   }
 }
@@ -275,6 +289,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    & > span {
+      padding: 0 40px;
+    }
+
     padding: 0 70px;
   }
 }
@@ -298,11 +316,11 @@
   overflow-wrap: break-word;
 
   &--name {
-    min-width: 81%;
+    min-width: 81.5%;
   }
 
   &--weight {
-    min-width: 72%;
+    min-width: 72.5%;
   }
 
   &--age {
@@ -331,7 +349,7 @@
   }
 
   &--tel {
-    min-width: 72%;
+    min-width: 72.5%;
 
     &:focus,
     &:disabled {
@@ -369,15 +387,15 @@
     padding: 10px 20px;
 
     &--name {
-      min-width: 89%;
+      min-width: 89.7%;
     }
 
     &--weight {
-      min-width: 84%;
+      min-width: 84.77%;
     }
 
     &--age {
-      min-width: 78%;
+      min-width: 78.55%;
       padding: 10px 23px;
     }
 
@@ -387,7 +405,7 @@
 
     &--tel {
       padding: 10px 18px;
-      min-width: 84%;
+      min-width: 84.5%;
     }
 
     &--tel,
@@ -398,7 +416,7 @@
 
   @media (min-width: @desktop-width) {
     &--name {
-      min-width: 88%;
+      min-width: 88.6%;
     }
 
     &--weight {
@@ -406,15 +424,15 @@
     }
 
     &--age {
-      min-width: 76%;
+      min-width: 76.1%;
     }
 
     &--mail {
-      min-width: 85%;
+      min-width: 85.4%;
     }
 
     &--tel {
-      min-width: 82%;
+      min-width: 82.9%;
     }
   }
 }
@@ -435,6 +453,12 @@
 
     &--envelope {
       top: 18px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--envelope {
+      right: 20px;
     }
   }
 }
@@ -473,8 +497,8 @@
       flex-wrap: wrap;
 
       & .form__option {
-        width: 282px;
-        margin-right: 60px;
+        width: 44.7%;
+        margin-right: 62px;
         margin-bottom: 54px;
 
         &:nth-child(2n) {
@@ -705,6 +729,7 @@
   border: none;
   margin: 0 auto 16px;
   cursor: pointer;
+  width: 100%;
 
   &:focus {
     outline: 2px dotted @grey-border-input;

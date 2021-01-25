@@ -1,14 +1,15 @@
 .extra-products__wrapper {
   .wrapper;
   line-height: 14px;
+  padding-left: 5.4%;
 
   @media (min-width: @tablet-width) {
     line-height: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 85px;
+    margin-bottom: 86px;
   }
 }
 
@@ -34,7 +35,7 @@
 
   @media (min-width: @tablet-width) {
     .heading(36px; 40px);
-    margin-bottom: 76px;
+    margin-bottom: 78px;
 
     & .extra-products__line {
       & > span {
@@ -84,7 +85,7 @@
 
   @media (min-width: @tablet-width) {
     border: 1px solid @special-grey;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: @desktop-width) {
@@ -116,36 +117,58 @@
     &:nth-child(3) .extra-products__info {
       width: 145px;
     }
+
+    &:nth-child(4) {
+      & .extra-products__card {
+        padding-bottom: 3%;
+      }
+
+      & .extra-products__info {
+        padding-top: 5px;
+        width: 220px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
     align-items: center;
 
     &:nth-child(2) .extra-products__info {
-      width: 47%;
+      width: 47.4%;
     }
 
 
     &:nth-child(3) .extra-products__info {
-      width: 47%;
+      width: 47.5%;
+    }
+
+    &:nth-child(4) {
+      & .extra-products__card {
+        padding-bottom: 22px;
+      }
+
+      & .extra-products__info {
+        padding-top: 4px;
+        width: 290px;
+      }
     }
   }
 }
 
 .extra-products__card {
-  padding-top: 13px;
+  padding-top: 12px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4% 5% 3%;
+    padding: 3% 5% 3.1%;
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     width: 613px;
-    padding: 23px 0 24px;
+    padding: 21px 0 20px;
   }
 }
 
@@ -154,18 +177,20 @@
   .uppercase-text(@special-dark-text);
   margin-top: 0;
   margin-bottom: 11px;
+  padding-left: 4px;
 
   @media (min-width: @tablet-width) {
     .heading(20px; 20px);
     color: @special-dark-text;
     margin: 0;
+    padding: 0;
   }
 }
 
 .extra-products__link {
   .button;
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     width: 90%;
@@ -187,12 +212,13 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-top: 6px;
     margin-bottom: 0;
     width: 226px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 287px;
+    width: 290px;
   }
 }
 
@@ -216,7 +242,7 @@
   justify-content: center;
   text-align: center;
   background-color: @green;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 186px;
   padding-bottom: 43px;
   position: relative;
@@ -243,7 +269,7 @@
   @media (min-width: @tablet-width) {
     align-items: center;
     text-align: left;
-    padding: 9.5% 8% 10% 50%;
+    padding: 10% 8% 9.8% 50%;
     background-image: url("../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -271,7 +297,7 @@
 
     &::before {
       width: 25%;
-      top: 12%;
+      top: 12.5%;
       left: 38%;
     }
   }

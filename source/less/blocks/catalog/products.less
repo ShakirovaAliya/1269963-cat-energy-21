@@ -6,12 +6,12 @@
   @media (min-width: @tablet-width) {
     .wrapper;
     font-size: 16px;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: auto auto auto auto;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
   }
 }
 
@@ -39,22 +39,23 @@
   border-top: 1px solid @grey-border;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 142px;
-    padding: 9% 11% 12%;
+    margin-bottom: 140px;
+    padding: 9% 11.2% 12.4%;
     background-color: @basic-grey;
     border: none;
 
-    &:nth-child(7) {
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
       margin-bottom: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 143px;
-    padding: 0 14% 16%;
+    padding: 0 14.2% 16.5%;
 
-    &:nth-child(5),
-    &:nth-child(6) {
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
       margin-bottom: 0;
     }
   }
@@ -73,12 +74,13 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-top: 52%;
+    padding-top: 132px;
     margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 133px;
+    margin-bottom: 35px;
   }
 }
 
@@ -88,21 +90,20 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -36%;
-    width: 68%;
+    top: -105px;
+    width: 168px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    top: -26%;
+    width: 172px;
+    top: -80px;
   }
 }
 
 .products__photo {
   @media (min-width: @tablet-width) {
-    width: 100%;
-    height: auto;
     object-fit: contain;
+    width: 100%;
   }
 }
 
@@ -128,20 +129,20 @@
 
   @media (min-width: @tablet-width) {
     .heading(20px; 24px);
-    width: 52%;
+    width: 54%;
     text-align: center;
     margin: 0 auto 15px;
   }
 
   @media (min-width: @desktop-width) {
     .heading(20px; 21px);
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     width: 74%;
   }
 }
 
 .products__info {
-  width: 90%;
+  width: 98.7%;
   border-collapse: collapse;
   word-break: break-all;
 
@@ -155,7 +156,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 99%;
   }
 
   @media (min-width: @desktop-width) {

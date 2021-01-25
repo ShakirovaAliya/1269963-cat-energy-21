@@ -4,8 +4,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
-    margin-top: -15px;
+    margin-bottom: 42px;
+    margin-top: -95px;
   }
 }
 
@@ -34,7 +34,7 @@
 .programs__card {
   background-color: @basic-grey;
   padding: 13% 7% 8%;
-  margin-bottom: 6%;
+  margin-bottom: 18px;
 
   &--slim {
     & .programs__title {
@@ -59,14 +59,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 11% 40% 9% 7%;
-    margin-bottom: 4%;
+    padding: 10.7% 40% 9.3% 7%;
+    margin-bottom: 30px;
 
     &--slim {
       & .programs__title {
         &::before {
           top: 3px;
-          left: 105%;
+          left: 105.5%;
           background-size: cover;
         }
       }
@@ -77,6 +77,9 @@
     }
 
     &--pro {
+      padding-top: 11%;
+      padding-bottom: 9.2%;
+
       & .programs__title {
         padding-left: 0;
         margin-bottom: 24px;
@@ -84,7 +87,7 @@
         &::before {
           width: 268px;
           height: 200px;
-          left: 95%;
+          left: 96%;
           top: 13px;
           background-size: cover;
         }
@@ -105,7 +108,7 @@
           width: 100px;
           height: 106px;
           left: 0;
-          top: -35px;
+          top: -37px;
         }
       }
 
@@ -125,7 +128,7 @@
           width: 134px;
           height: 100px;
           left: -20px;
-          top: -30px;
+          top: -32px;
         }
       }
 
@@ -133,6 +136,22 @@
         padding-right: 0;
         padding-bottom: 0;
         width: 97%;
+      }
+
+      & .programs__link {
+        &::before {
+          left: 130px;
+        }
+
+        &::after {
+          left: 148px;
+        }
+
+        &:hover {
+          &::after {
+            left: 155px;
+          }
+        }
       }
     }
   }
@@ -142,7 +161,7 @@
   .heading(24px; 27px);
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-left: 72px;
   padding-right: 20px;
   position: relative;
